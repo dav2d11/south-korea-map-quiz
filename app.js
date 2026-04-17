@@ -1,6 +1,6 @@
 import { MAP_DATA } from "./data/regions.js";
 
-const STORAGE_KEY = "south-korea-map-quiz-v2";
+const STORAGE_KEY = "south-korea-map-quiz-v3";
 const DEFAULT_WEIGHT = 10;
 const MIN_WEIGHT = 2;
 const MAX_WEIGHT = 50;

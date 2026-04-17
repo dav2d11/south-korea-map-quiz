@@ -32,6 +32,14 @@ const provinceDisplayNames = {
   충청북도: "충청북도",
 };
 
+function isOrdinaryDistrictName(name) {
+  return name.includes("시 ") && name.endsWith("구");
+}
+
+function getParentCityName(name) {
+  return name.split(" ")[0];
+}
+
 function squaredDistance(a, b) {
   const dx = a[0] - b[0];
   const dy = a[1] - b[1];
@@ -182,6 +190,33 @@ for (const fileName of fs.readdirSync(sourceDir)) {
   }
 }
 
+const mergedFeatureMap = new Map();
+
+for (const feature of rawFeatures) {
+  const ordinaryDistrict = isOrdinaryDistrictName(feature.name);
+  const mergedName = ordinaryDistrict ? getParentCityName(feature.name) : feature.name;
+  const mergedId = ordinaryDistrict
+    ? `${feature.provinceSourceName}-${mergedName}`
+    : feature.code;
+  const mergedKey = `${feature.provinceSourceName}|${mergedName}`;
+  const existing = mergedFeatureMap.get(mergedKey);
+
+  if (!existing) {
+    mergedFeatureMap.set(mergedKey, {
+      id: mergedId,
+      name: mergedName,
+      provinceName: feature.provinceName,
+      provinceSourceName: feature.provinceSourceName,
+      polygons: [...feature.polygons],
+    });
+    continue;
+  }
+
+  existing.polygons.push(...feature.polygons);
+}
+
+const mergedFeatures = Array.from(mergedFeatureMap.values());
+
 const scale = Math.min(
   (VIEWBOX_WIDTH - PADDING * 2) / (maxX - minX),
   (VIEWBOX_HEIGHT - PADDING * 2) / (maxY - minY),
@@ -193,7 +228,7 @@ function projectPoint([x, y]) {
   return [translateX + (x - minX) * scale, translateY + (maxY - y) * scale];
 }
 
-const regions = rawFeatures.map((feature) => {
+const regions = mergedFeatures.map((feature) => {
   const projectedPolygons = [];
   const bbox = {
     minX: Number.POSITIVE_INFINITY,
