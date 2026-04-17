@@ -149,6 +149,102 @@ function normalizeText(value) {
   return value.replace(/\s+/g, "").replace(/[().,/-]/g, "").toLowerCase();
 }
 
+function pointKey([x, y]) {
+  return `${x},${y}`;
+}
+
+function segmentKey(start, end) {
+  const startKey = pointKey(start);
+  const endKey = pointKey(end);
+  return startKey < endKey ? `${startKey}|${endKey}` : `${endKey}|${startKey}`;
+}
+
+function buildMergedBoundaryRings(polygons) {
+  const segmentCounts = new Map();
+  const pointByKey = new Map();
+
+  for (const polygon of polygons) {
+    for (const ring of polygon) {
+      for (let i = 0; i < ring.length - 1; i += 1) {
+        const start = ring[i];
+        const end = ring[i + 1];
+        const key = segmentKey(start, end);
+        segmentCounts.set(key, (segmentCounts.get(key) || 0) + 1);
+        pointByKey.set(pointKey(start), start);
+        pointByKey.set(pointKey(end), end);
+      }
+    }
+  }
+
+  const adjacency = new Map();
+  const boundarySegments = [];
+
+  for (const [key, count] of segmentCounts) {
+    if (count !== 1) {
+      continue;
+    }
+
+    const [startKey, endKey] = key.split("|");
+    boundarySegments.push([startKey, endKey]);
+
+    const startNeighbors = adjacency.get(startKey) || [];
+    startNeighbors.push(endKey);
+    adjacency.set(startKey, startNeighbors);
+
+    const endNeighbors = adjacency.get(endKey) || [];
+    endNeighbors.push(startKey);
+    adjacency.set(endKey, endNeighbors);
+  }
+
+  const usedSegments = new Set();
+  const rings = [];
+
+  function markUsed(startKey, endKey) {
+    const key = startKey < endKey ? `${startKey}|${endKey}` : `${endKey}|${startKey}`;
+    usedSegments.add(key);
+  }
+
+  function isUsed(startKey, endKey) {
+    const key = startKey < endKey ? `${startKey}|${endKey}` : `${endKey}|${startKey}`;
+    return usedSegments.has(key);
+  }
+
+  for (const [startKey, nextKey] of boundarySegments) {
+    if (isUsed(startKey, nextKey)) {
+      continue;
+    }
+
+    const ringKeys = [startKey];
+    let previousKey = null;
+    let currentKey = startKey;
+    let candidateKey = nextKey;
+
+    while (candidateKey) {
+      markUsed(currentKey, candidateKey);
+      currentKey = candidateKey;
+      ringKeys.push(currentKey);
+
+      if (currentKey === startKey) {
+        break;
+      }
+
+      const neighbors = adjacency.get(currentKey) || [];
+      const nextCandidate = neighbors.find(
+        (neighborKey) => neighborKey !== previousKey && !isUsed(currentKey, neighborKey),
+      );
+
+      previousKey = ringKeys.at(-2);
+      candidateKey = nextCandidate || (neighbors.find((neighborKey) => neighborKey !== previousKey) || null);
+    }
+
+    if (ringKeys.length >= 4 && ringKeys.at(-1) === startKey) {
+      rings.push(ringKeys.map((key) => pointByKey.get(key)));
+    }
+  }
+
+  return rings;
+}
+
 const rawFeatures = [];
 let minX = Number.POSITIVE_INFINITY;
 let minY = Number.POSITIVE_INFINITY;
@@ -229,6 +325,7 @@ function projectPoint([x, y]) {
 }
 
 const regions = mergedFeatures.map((feature) => {
+  const mergedBoundaryRings = buildMergedBoundaryRings(feature.polygons);
   const projectedPolygons = [];
   const bbox = {
     minX: Number.POSITIVE_INFINITY,
@@ -238,17 +335,13 @@ const regions = mergedFeatures.map((feature) => {
   };
   let totalArea = 0;
 
-  for (const polygon of feature.polygons) {
-    const projectedPolygon = [];
-    for (const ring of polygon) {
-      const simplified = simplifyRing(ring, TOLERANCE).map(projectPoint);
-      for (const [x, y] of simplified) {
-        updateBbox(bbox, x, y);
-      }
-      totalArea += polygonArea(simplified);
-      projectedPolygon.push(simplified);
+  for (const ring of mergedBoundaryRings) {
+    const simplified = simplifyRing(ring, TOLERANCE).map(projectPoint);
+    for (const [x, y] of simplified) {
+      updateBbox(bbox, x, y);
     }
-    projectedPolygons.push(projectedPolygon);
+    totalArea += polygonArea(simplified);
+    projectedPolygons.push([simplified]);
   }
 
   const pathData = projectedPolygons
