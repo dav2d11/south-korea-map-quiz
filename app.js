@@ -13,9 +13,48 @@ const mapSvg = document.getElementById("quiz-map");
 const screenRoot = document.getElementById("screen-root");
 const homeButton = document.getElementById("home-button");
 
-const regions = MAP_DATA.regions;
+function deriveRegionId(region, index) {
+  if (region.id !== undefined && region.id !== null && `${region.id}`.trim() !== "") {
+    return `${region.id}`;
+  }
+  const provinceKey = region.provinceSource || region.province || "region";
+  return `${provinceKey}-${region.name || index}`;
+}
+
+function normalizeRegions(rawRegions) {
+  const usedIds = new Set();
+
+  return rawRegions.map((region, index) => {
+    const baseId = deriveRegionId(region, index);
+    let nextId = baseId;
+    let suffix = 2;
+
+    while (usedIds.has(nextId)) {
+      nextId = `${baseId}-${suffix}`;
+      suffix += 1;
+    }
+
+    usedIds.add(nextId);
+    return {
+      ...region,
+      id: nextId,
+    };
+  });
+}
+
+const regions = normalizeRegions(MAP_DATA.regions);
 const regionById = new Map(regions.map((region) => [region.id, region]));
 const mapPaths = new Map();
+
+for (const region of regions) {
+  if (!Array.isArray(region.sameProvinceNearby) || region.sameProvinceNearby.length === 0) {
+    continue;
+  }
+
+  region.sameProvinceNearby = region.sameProvinceNearby
+    .map((regionId) => `${regionId}`)
+    .filter((regionId) => regionById.has(regionId) && regionId !== region.id);
+}
 
 const state = {
   mode: null,
