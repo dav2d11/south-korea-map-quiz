@@ -340,9 +340,22 @@ function formatRegionLabel(region) {
 }
 
 function buildChoices(answerRegion) {
-  const sameProvince = shuffle(
-    answerRegion.sameProvinceNearby.map((regionId) => regionById.get(regionId)).filter(Boolean),
+  // sameProvinceNearby 우선, 비어 있으면 같은 province에서 직접 찾아 보완
+  const nearbyIds = new Set(answerRegion.sameProvinceNearby || []);
+  const sameProvinceAll = shuffle(
+    regions.filter(
+      (region) => region.id !== answerRegion.id && region.province === answerRegion.province,
+    ),
   );
+  const sameProvinceNearby = shuffle(
+    [...nearbyIds].map((regionId) => regionById.get(regionId)).filter(Boolean),
+  );
+  // 가까운 지역 + 같은 도 나머지 순서로 합치기 (중복 제거)
+  const sameProvinceCandidates = [
+    ...sameProvinceNearby,
+    ...sameProvinceAll.filter((r) => !nearbyIds.has(r.id)),
+  ];
+
   const highWeightOthers = regions
     .filter((region) => region.id !== answerRegion.id)
     .sort((a, b) => stats[b.id].weight - stats[a.id].weight || a.fullName.localeCompare(b.fullName, "ko"));
@@ -365,7 +378,7 @@ function buildChoices(answerRegion) {
   }
 
   tryAdd(answerRegion);
-  for (const candidate of sameProvince) {
+  for (const candidate of sameProvinceCandidates) {
     tryAdd(candidate);
     if (picked.length >= 4) {
       break;
