@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#b82025" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <title>남한 시군구 지도 퀴즈</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./icon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">South Korea Map Quiz</p>
+          <h1>남한 시군구 지도 퀴즈</h1>
+        </div>
+        <button id="home-button" class="ghost-button" type="button">메인화면</button>
+      </header>
+
+      <main class="layout">
+        <section class="panel map-panel">
+          <div class="panel-heading">
+            <h2>지도</h2>
+            <p id="map-caption">빨간색으로 칠해진 시군구의 이름을 맞히세요.</p>
+          </div>
+          <div class="map-frame">
+            <svg id="quiz-map" aria-label="대한민국 시군구 지도"></svg>
+          </div>
+        </section>
+
+        <section class="panel ui-panel">
+          <div id="screen-root"></div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

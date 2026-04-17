@@ -1,0 +1,18 @@
+{
+  "name": "남한 시군구 지도 퀴즈",
+  "short_name": "지도 퀴즈",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#efe4d1",
+  "theme_color": "#b82025",
+  "lang": "ko",
+  "description": "남한 시군구 지도를 보고 객관식과 주관식으로 퀴즈를 푸는 학습 웹앱",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
