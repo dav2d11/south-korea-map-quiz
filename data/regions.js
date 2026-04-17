@@ -1,6 +1,6 @@
 export const MAP_DATA = {
   "viewBox": "0 0 820 1120",
-  "generatedAt": "2026-04-17T13:01:14.852Z",
+  "generatedAt": "2026-04-17T14:59:05.865Z",
   "simplifyTolerance": 90,
   "regionCount": 229,
   "provinces": [
@@ -24,6 +24,7 @@ export const MAP_DATA = {
   ],
   "regions": [
     {
+      "id": "32030",
       "name": "강릉시",
       "province": "강원특별자치도",
       "provinceSource": "강원도",
@@ -40,7 +41,16 @@ export const MAP_DATA = {
         314.47
       ],
       "area": 1490.7,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "32040",
+        "32340",
+        "32350",
+        "32410",
+        "32070",
+        "32050",
+        "32060",
+        "32330"
+      ],
       "acceptedAnswers": [
         "강릉시",
         "강원특별자치도강릉시",
@@ -48,6 +58,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "32400",
       "name": "고성군",
       "province": "강원특별자치도",
       "provinceSource": "강원도",
@@ -64,7 +75,16 @@ export const MAP_DATA = {
         223.32
       ],
       "area": 946.64,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "32060",
+        "32390",
+        "32380",
+        "32410",
+        "32370",
+        "32310",
+        "32010",
+        "32360"
+      ],
       "acceptedAnswers": [
         "고성군",
         "강원특별자치도고성군",
@@ -72,6 +92,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "32040",
       "name": "동해시",
       "province": "강원특별자치도",
       "provinceSource": "강원도",
@@ -88,7 +109,16 @@ export const MAP_DATA = {
         339.94
       ],
       "area": 259.78,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "32070",
+        "32030",
+        "32350",
+        "32050",
+        "32340",
+        "32330",
+        "32410",
+        "32060"
+      ],
       "acceptedAnswers": [
         "동해시",
         "강원특별자치도동해시",
@@ -96,6 +126,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "32070",
       "name": "삼척시",
       "province": "강원특별자치도",
       "provinceSource": "강원도",
@@ -112,7 +143,16 @@ export const MAP_DATA = {
         373.96
       ],
       "area": 1701.62,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "32050",
+        "32040",
+        "32350",
+        "32330",
+        "32030",
+        "32340",
+        "32410",
+        "32320"
+      ],
       "acceptedAnswers": [
         "삼척시",
         "강원특별자치도삼척시",
@@ -120,6 +160,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "32060",
       "name": "속초시",
       "province": "강원특별자치도",
       "provinceSource": "강원도",
@@ -136,7 +177,16 @@ export const MAP_DATA = {
         253.16
       ],
       "area": 151.18,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "32410",
+        "32390",
+        "32400",
+        "32380",
+        "32030",
+        "32310",
+        "32340",
+        "32010"
+      ],
       "acceptedAnswers": [
         "속초시",
         "강원특별자치도속초시",
@@ -144,6 +194,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "32380",
       "name": "양구군",
       "province": "강원특별자치도",
       "provinceSource": "강원도",
@@ -160,7 +211,16 @@ export const MAP_DATA = {
         254.83
       ],
       "area": 946.92,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "32390",
+        "32370",
+        "32010",
+        "32400",
+        "32060",
+        "32360",
+        "32310",
+        "32410"
+      ],
       "acceptedAnswers": [
         "양구군",
         "강원특별자치도양구군",
@@ -168,6 +228,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "32410",
       "name": "양양군",
       "province": "강원특별자치도",
       "provinceSource": "강원도",
@@ -184,7 +245,16 @@ export const MAP_DATA = {
         274.75
       ],
       "area": 903.97,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "32060",
+        "32390",
+        "32030",
+        "32400",
+        "32340",
+        "32380",
+        "32310",
+        "32040"
+      ],
       "acceptedAnswers": [
         "양양군",
         "강원특별자치도양양군",
@@ -192,6 +262,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "32330",
       "name": "영월군",
       "province": "강원특별자치도",
       "provinceSource": "강원도",
@@ -208,7 +279,16 @@ export const MAP_DATA = {
         380.19
       ],
       "area": 1613.62,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "32350",
+        "32340",
+        "32050",
+        "32020",
+        "32320",
+        "32070",
+        "32040",
+        "32030"
+      ],
       "acceptedAnswers": [
         "영월군",
         "강원특별자치도영월군",
@@ -216,6 +296,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "32020",
       "name": "원주시",
       "province": "강원특별자치도",
       "provinceSource": "강원도",
@@ -232,7 +313,16 @@ export const MAP_DATA = {
         366.52
       ],
       "area": 1240.31,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "32320",
+        "32310",
+        "32330",
+        "32340",
+        "32010",
+        "32350",
+        "32030",
+        "32390"
+      ],
       "acceptedAnswers": [
         "원주시",
         "강원특별자치도원주시",
@@ -240,6 +330,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "32390",
       "name": "인제군",
       "province": "강원특별자치도",
       "provinceSource": "강원도",
@@ -256,7 +347,16 @@ export const MAP_DATA = {
         263.3
       ],
       "area": 2348.92,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "32380",
+        "32060",
+        "32410",
+        "32400",
+        "32310",
+        "32010",
+        "32370",
+        "32340"
+      ],
       "acceptedAnswers": [
         "인제군",
         "강원특별자치도인제군",
@@ -264,6 +364,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "32350",
       "name": "정선군",
       "province": "강원특별자치도",
       "provinceSource": "강원도",
@@ -280,7 +381,16 @@ export const MAP_DATA = {
         359.55
       ],
       "area": 1745.64,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "32330",
+        "32050",
+        "32340",
+        "32040",
+        "32070",
+        "32030",
+        "32320",
+        "32020"
+      ],
       "acceptedAnswers": [
         "정선군",
         "강원특별자치도정선군",
@@ -288,6 +398,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "32360",
       "name": "철원군",
       "province": "강원특별자치도",
       "provinceSource": "강원도",
@@ -304,7 +415,16 @@ export const MAP_DATA = {
         247.83
       ],
       "area": 1274.35,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "32370",
+        "32010",
+        "32380",
+        "32390",
+        "32310",
+        "32400",
+        "32060",
+        "32320"
+      ],
       "acceptedAnswers": [
         "철원군",
         "강원특별자치도철원군",
@@ -312,6 +432,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "32010",
       "name": "춘천시",
       "province": "강원특별자치도",
       "provinceSource": "강원도",
@@ -328,7 +449,16 @@ export const MAP_DATA = {
         292.87
       ],
       "area": 1596.67,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "32310",
+        "32370",
+        "32380",
+        "32360",
+        "32390",
+        "32320",
+        "32020",
+        "32060"
+      ],
       "acceptedAnswers": [
         "춘천시",
         "강원특별자치도춘천시",
@@ -336,6 +466,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "32050",
       "name": "태백시",
       "province": "강원특별자치도",
       "provinceSource": "강원도",
@@ -352,7 +483,16 @@ export const MAP_DATA = {
         381.55
       ],
       "area": 434.21,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "32070",
+        "32350",
+        "32040",
+        "32330",
+        "32340",
+        "32030",
+        "32020",
+        "32320"
+      ],
       "acceptedAnswers": [
         "태백시",
         "강원특별자치도태백시",
@@ -360,6 +500,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "32340",
       "name": "평창군",
       "province": "강원특별자치도",
       "provinceSource": "강원도",
@@ -376,7 +517,16 @@ export const MAP_DATA = {
         336.87
       ],
       "area": 2094.59,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "32350",
+        "32030",
+        "32330",
+        "32320",
+        "32310",
+        "32040",
+        "32020",
+        "32410"
+      ],
       "acceptedAnswers": [
         "평창군",
         "강원특별자치도평창군",
@@ -384,6 +534,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "32310",
       "name": "홍천군",
       "province": "강원특별자치도",
       "provinceSource": "강원도",
@@ -400,7 +551,16 @@ export const MAP_DATA = {
         310.26
       ],
       "area": 2601.43,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "32320",
+        "32010",
+        "32390",
+        "32340",
+        "32380",
+        "32020",
+        "32370",
+        "32410"
+      ],
       "acceptedAnswers": [
         "홍천군",
         "강원특별자치도홍천군",
@@ -408,6 +568,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "32370",
       "name": "화천군",
       "province": "강원특별자치도",
       "provinceSource": "강원도",
@@ -424,7 +585,16 @@ export const MAP_DATA = {
         258.2
       ],
       "area": 1298.53,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "32360",
+        "32380",
+        "32010",
+        "32390",
+        "32310",
+        "32400",
+        "32060",
+        "32320"
+      ],
       "acceptedAnswers": [
         "화천군",
         "강원특별자치도화천군",
@@ -432,6 +602,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "32320",
       "name": "횡성군",
       "province": "강원특별자치도",
       "provinceSource": "강원도",
@@ -448,7 +619,16 @@ export const MAP_DATA = {
         344.56
       ],
       "area": 1428.15,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "32020",
+        "32310",
+        "32340",
+        "32010",
+        "32330",
+        "32350",
+        "32390",
+        "32030"
+      ],
       "acceptedAnswers": [
         "횡성군",
         "강원특별자치도횡성군",
@@ -456,6 +636,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "31370",
       "name": "가평군",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -472,13 +653,23 @@ export const MAP_DATA = {
         302.06
       ],
       "area": 1203.25,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "31270",
+        "31130",
+        "31030",
+        "31080",
+        "31380",
+        "31120",
+        "31180",
+        "31260"
+      ],
       "acceptedAnswers": [
         "가평군",
         "경기도가평군"
       ]
     },
     {
+      "id": "경기도-고양시",
       "name": "고양시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -495,13 +686,23 @@ export const MAP_DATA = {
         321.91
       ],
       "area": 381.51,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "31230",
+        "31050",
+        "31200",
+        "31260",
+        "31030",
+        "31060",
+        "31120",
+        "31110"
+      ],
       "acceptedAnswers": [
         "고양시",
         "경기도고양시"
       ]
     },
     {
+      "id": "31110",
       "name": "과천시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -518,13 +719,23 @@ export const MAP_DATA = {
         351.97
       ],
       "area": 51.21,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "경기도-안양시",
+        "31170",
+        "경기도-성남시",
+        "31060",
+        "31160",
+        "경기도-수원시",
+        "31050",
+        "31180"
+      ],
       "acceptedAnswers": [
         "과천시",
         "경기도과천시"
       ]
     },
     {
+      "id": "31060",
       "name": "광명시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -541,13 +752,23 @@ export const MAP_DATA = {
         350.03
       ],
       "area": 55.03,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "경기도-안양시",
+        "31050",
+        "31150",
+        "31110",
+        "31160",
+        "31170",
+        "경기도-수원시",
+        "경기도-성남시"
+      ],
       "acceptedAnswers": [
         "광명시",
         "경기도광명시"
       ]
     },
     {
+      "id": "31250",
       "name": "광주시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -564,13 +785,23 @@ export const MAP_DATA = {
         356.62
       ],
       "area": 615.32,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "경기도-성남시",
+        "31180",
+        "경기도-용인시",
+        "31110",
+        "31120",
+        "31170",
+        "31130",
+        "경기도-수원시"
+      ],
       "acceptedAnswers": [
         "광주시",
         "경기도광주시"
       ]
     },
     {
+      "id": "31120",
       "name": "구리시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -587,13 +818,23 @@ export const MAP_DATA = {
         329.85
       ],
       "area": 47.66,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "31130",
+        "31180",
+        "31030",
+        "31110",
+        "경기도-성남시",
+        "31260",
+        "31250",
+        "경기도-고양시"
+      ],
       "acceptedAnswers": [
         "구리시",
         "경기도구리시"
       ]
     },
     {
+      "id": "31160",
       "name": "군포시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -610,13 +851,23 @@ export const MAP_DATA = {
         364.17
       ],
       "area": 52.01,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "31170",
+        "경기도-안양시",
+        "경기도-수원시",
+        "31060",
+        "31110",
+        "31150",
+        "경기도-성남시",
+        "31050"
+      ],
       "acceptedAnswers": [
         "군포시",
         "경기도군포시"
       ]
     },
     {
+      "id": "31230",
       "name": "김포시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -633,13 +884,23 @@ export const MAP_DATA = {
         318.4
       ],
       "area": 402.72,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "경기도-고양시",
+        "31050",
+        "31200",
+        "31060",
+        "31150",
+        "31260",
+        "31030",
+        "경기도-안양시"
+      ],
       "acceptedAnswers": [
         "김포시",
         "경기도김포시"
       ]
     },
     {
+      "id": "31130",
       "name": "남양주시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -656,13 +917,23 @@ export const MAP_DATA = {
         324.36
       ],
       "area": 657.93,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "31120",
+        "31180",
+        "31030",
+        "31370",
+        "31260",
+        "31250",
+        "경기도-성남시",
+        "31110"
+      ],
       "acceptedAnswers": [
         "남양주시",
         "경기도남양주시"
       ]
     },
     {
+      "id": "31080",
       "name": "동두천시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -679,13 +950,23 @@ export const MAP_DATA = {
         287.44
       ],
       "area": 137.27,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "31260",
+        "31270",
+        "31030",
+        "31350",
+        "31200",
+        "31130",
+        "31370",
+        "31120"
+      ],
       "acceptedAnswers": [
         "동두천시",
         "경기도동두천시"
       ]
     },
     {
+      "id": "31050",
       "name": "부천시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -702,13 +983,23 @@ export const MAP_DATA = {
         342.26
       ],
       "area": 76.93,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "31060",
+        "31150",
+        "경기도-안양시",
+        "경기도-고양시",
+        "31110",
+        "31160",
+        "31230",
+        "31170"
+      ],
       "acceptedAnswers": [
         "부천시",
         "경기도부천시"
       ]
     },
     {
+      "id": "경기도-성남시",
       "name": "성남시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -725,13 +1016,23 @@ export const MAP_DATA = {
         356.04
       ],
       "area": 202.37,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "31110",
+        "31170",
+        "31250",
+        "경기도-수원시",
+        "경기도-안양시",
+        "31180",
+        "31160",
+        "경기도-용인시"
+      ],
       "acceptedAnswers": [
         "성남시",
         "경기도성남시"
       ]
     },
     {
+      "id": "경기도-수원시",
       "name": "수원시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -748,13 +1049,23 @@ export const MAP_DATA = {
         371.4
       ],
       "area": 173.27,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "31170",
+        "31160",
+        "31140",
+        "경기도-안양시",
+        "경기도-성남시",
+        "31110",
+        "경기도-용인시",
+        "31240"
+      ],
       "acceptedAnswers": [
         "수원시",
         "경기도수원시"
       ]
     },
     {
+      "id": "31150",
       "name": "시흥시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -771,13 +1082,23 @@ export const MAP_DATA = {
         357.62
       ],
       "area": 202.63,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "31060",
+        "31050",
+        "경기도-안양시",
+        "31160",
+        "경기도-안산시",
+        "31170",
+        "31110",
+        "경기도-수원시"
+      ],
       "acceptedAnswers": [
         "시흥시",
         "경기도시흥시"
       ]
     },
     {
+      "id": "경기도-안산시",
       "name": "안산시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -794,13 +1115,23 @@ export const MAP_DATA = {
         378.46
       ],
       "area": 246.59,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "31240",
+        "31150",
+        "31160",
+        "31060",
+        "경기도-안양시",
+        "경기도-수원시",
+        "31170",
+        "31050"
+      ],
       "acceptedAnswers": [
         "안산시",
         "경기도안산시"
       ]
     },
     {
+      "id": "31220",
       "name": "안성시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -817,13 +1148,23 @@ export const MAP_DATA = {
         406.45
       ],
       "area": 792.54,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "경기도-용인시",
+        "31210",
+        "31140",
+        "31070",
+        "31280",
+        "경기도-수원시",
+        "31250",
+        "31240"
+      ],
       "acceptedAnswers": [
         "안성시",
         "경기도안성시"
       ]
     },
     {
+      "id": "경기도-안양시",
       "name": "안양시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -840,13 +1181,23 @@ export const MAP_DATA = {
         355.86
       ],
       "area": 83.74,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "31160",
+        "31060",
+        "31170",
+        "31110",
+        "경기도-수원시",
+        "31150",
+        "경기도-성남시",
+        "31050"
+      ],
       "acceptedAnswers": [
         "안양시",
         "경기도안양시"
       ]
     },
     {
+      "id": "31260",
       "name": "양주시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -863,13 +1214,23 @@ export const MAP_DATA = {
         302.65
       ],
       "area": 444.26,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "31030",
+        "31080",
+        "31200",
+        "경기도-고양시",
+        "31120",
+        "31130",
+        "31270",
+        "31350"
+      ],
       "acceptedAnswers": [
         "양주시",
         "경기도양주시"
       ]
     },
     {
+      "id": "31380",
       "name": "양평군",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -886,13 +1247,23 @@ export const MAP_DATA = {
         340.85
       ],
       "area": 1255.15,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "31280",
+        "31250",
+        "31180",
+        "31130",
+        "31370",
+        "31210",
+        "31120",
+        "경기도-성남시"
+      ],
       "acceptedAnswers": [
         "양평군",
         "경기도양평군"
       ]
     },
     {
+      "id": "31280",
       "name": "여주시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -909,13 +1280,23 @@ export const MAP_DATA = {
         371.52
       ],
       "area": 869.7,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "31210",
+        "31380",
+        "31250",
+        "경기도-용인시",
+        "31220",
+        "31180",
+        "경기도-성남시",
+        "31140"
+      ],
       "acceptedAnswers": [
         "여주시",
         "경기도여주시"
       ]
     },
     {
+      "id": "31350",
       "name": "연천군",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -932,13 +1313,23 @@ export const MAP_DATA = {
         262.9
       ],
       "area": 997.48,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "31080",
+        "31270",
+        "31200",
+        "31260",
+        "31030",
+        "경기도-고양시",
+        "31370",
+        "31230"
+      ],
       "acceptedAnswers": [
         "연천군",
         "경기도연천군"
       ]
     },
     {
+      "id": "31140",
       "name": "오산시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -955,13 +1346,23 @@ export const MAP_DATA = {
         388.02
       ],
       "area": 61.09,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "경기도-수원시",
+        "경기도-용인시",
+        "31070",
+        "31240",
+        "31170",
+        "31160",
+        "경기도-성남시",
+        "31220"
+      ],
       "acceptedAnswers": [
         "오산시",
         "경기도오산시"
       ]
     },
     {
+      "id": "경기도-용인시",
       "name": "용인시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -978,13 +1379,23 @@ export const MAP_DATA = {
         379.43
       ],
       "area": 847.12,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "31140",
+        "31250",
+        "경기도-수원시",
+        "경기도-성남시",
+        "31210",
+        "31220",
+        "31170",
+        "31160"
+      ],
       "acceptedAnswers": [
         "용인시",
         "경기도용인시"
       ]
     },
     {
+      "id": "31170",
       "name": "의왕시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -1001,13 +1412,23 @@ export const MAP_DATA = {
         362.09
       ],
       "area": 77.06,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "31160",
+        "경기도-안양시",
+        "경기도-수원시",
+        "31110",
+        "경기도-성남시",
+        "31060",
+        "31150",
+        "31140"
+      ],
       "acceptedAnswers": [
         "의왕시",
         "경기도의왕시"
       ]
     },
     {
+      "id": "31030",
       "name": "의정부시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -1024,13 +1445,23 @@ export const MAP_DATA = {
         312.33
       ],
       "area": 117.16,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "31260",
+        "31120",
+        "31130",
+        "31080",
+        "경기도-고양시",
+        "31200",
+        "31180",
+        "31270"
+      ],
       "acceptedAnswers": [
         "의정부시",
         "경기도의정부시"
       ]
     },
     {
+      "id": "31210",
       "name": "이천시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -1047,13 +1478,23 @@ export const MAP_DATA = {
         383.01
       ],
       "area": 661.21,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "31280",
+        "경기도-용인시",
+        "31220",
+        "31250",
+        "31380",
+        "31140",
+        "경기도-성남시",
+        "경기도-수원시"
+      ],
       "acceptedAnswers": [
         "이천시",
         "경기도이천시"
       ]
     },
     {
+      "id": "31200",
       "name": "파주시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -1070,13 +1511,23 @@ export const MAP_DATA = {
         296.7
       ],
       "area": 987,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "31260",
+        "경기도-고양시",
+        "31080",
+        "31230",
+        "31030",
+        "31350",
+        "31120",
+        "31050"
+      ],
       "acceptedAnswers": [
         "파주시",
         "경기도파주시"
       ]
     },
     {
+      "id": "31070",
       "name": "평택시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -1093,13 +1544,23 @@ export const MAP_DATA = {
         406.56
       ],
       "area": 657.64,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "31140",
+        "31240",
+        "경기도-수원시",
+        "31220",
+        "경기도-용인시",
+        "31160",
+        "경기도-안산시",
+        "31170"
+      ],
       "acceptedAnswers": [
         "평택시",
         "경기도평택시"
       ]
     },
     {
+      "id": "31270",
       "name": "포천시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -1116,13 +1577,23 @@ export const MAP_DATA = {
         281.26
       ],
       "area": 1181.96,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "31080",
+        "31370",
+        "31260",
+        "31350",
+        "31030",
+        "31130",
+        "31200",
+        "31120"
+      ],
       "acceptedAnswers": [
         "포천시",
         "경기도포천시"
       ]
     },
     {
+      "id": "31180",
       "name": "하남시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -1139,13 +1610,23 @@ export const MAP_DATA = {
         339.3
       ],
       "area": 132.85,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "31120",
+        "31130",
+        "31250",
+        "경기도-성남시",
+        "31110",
+        "31030",
+        "31170",
+        "경기도-안양시"
+      ],
       "acceptedAnswers": [
         "하남시",
         "경기도하남시"
       ]
     },
     {
+      "id": "31240",
       "name": "화성시",
       "province": "경기도",
       "provinceSource": "경기도",
@@ -1162,13 +1643,23 @@ export const MAP_DATA = {
         389.08
       ],
       "area": 1246.21,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "31140",
+        "31070",
+        "경기도-안산시",
+        "경기도-수원시",
+        "31160",
+        "31170",
+        "31150",
+        "경기도-안양시"
+      ],
       "acceptedAnswers": [
         "화성시",
         "경기도화성시"
       ]
     },
     {
+      "id": "38090",
       "name": "거제시",
       "province": "경상남도",
       "provinceSource": "경상남도",
@@ -1185,13 +1676,23 @@ export const MAP_DATA = {
         692.91
       ],
       "area": 582.96,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "38050",
+        "38340",
+        "경상남도-창원시",
+        "38320",
+        "38070",
+        "38060",
+        "38030",
+        "38350"
+      ],
       "acceptedAnswers": [
         "거제시",
         "경상남도거제시"
       ]
     },
     {
+      "id": "38390",
       "name": "거창군",
       "province": "경상남도",
       "provinceSource": "경상남도",
@@ -1208,13 +1709,23 @@ export const MAP_DATA = {
         580.63
       ],
       "area": 1144.69,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "38380",
+        "38400",
+        "38370",
+        "38310",
+        "38330",
+        "38030",
+        "38360",
+        "38320"
+      ],
       "acceptedAnswers": [
         "거창군",
         "경상남도거창군"
       ]
     },
     {
+      "id": "38340",
       "name": "고성군",
       "province": "경상남도",
       "provinceSource": "경상남도",
@@ -1231,13 +1742,23 @@ export const MAP_DATA = {
         674.37
       ],
       "area": 745.06,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "38060",
+        "38030",
+        "38050",
+        "38090",
+        "38320",
+        "경상남도-창원시",
+        "38350",
+        "38310"
+      ],
       "acceptedAnswers": [
         "고성군",
         "경상남도고성군"
       ]
     },
     {
+      "id": "38070",
       "name": "김해시",
       "province": "경상남도",
       "provinceSource": "경상남도",
@@ -1254,13 +1775,23 @@ export const MAP_DATA = {
         637.99
       ],
       "area": 660.73,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "38100",
+        "경상남도-창원시",
+        "38080",
+        "38320",
+        "38330",
+        "38090",
+        "38310",
+        "38340"
+      ],
       "acceptedAnswers": [
         "김해시",
         "경상남도김해시"
       ]
     },
     {
+      "id": "38350",
       "name": "남해군",
       "province": "경상남도",
       "provinceSource": "경상남도",
@@ -1277,13 +1808,23 @@ export const MAP_DATA = {
         699.89
       ],
       "area": 517.04,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "38060",
+        "38340",
+        "38360",
+        "38050",
+        "38030",
+        "38090",
+        "38370",
+        "38320"
+      ],
       "acceptedAnswers": [
         "남해군",
         "경상남도남해군"
       ]
     },
     {
+      "id": "38080",
       "name": "밀양시",
       "province": "경상남도",
       "provinceSource": "경상남도",
@@ -1300,13 +1841,23 @@ export const MAP_DATA = {
         608.81
       ],
       "area": 1147.05,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "38100",
+        "38070",
+        "38330",
+        "경상남도-창원시",
+        "38320",
+        "38310",
+        "38400",
+        "38030"
+      ],
       "acceptedAnswers": [
         "밀양시",
         "경상남도밀양시"
       ]
     },
     {
+      "id": "38060",
       "name": "사천시",
       "province": "경상남도",
       "provinceSource": "경상남도",
@@ -1323,13 +1874,23 @@ export const MAP_DATA = {
         672.08
       ],
       "area": 574.05,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "38030",
+        "38350",
+        "38340",
+        "38360",
+        "38370",
+        "38310",
+        "38320",
+        "38050"
+      ],
       "acceptedAnswers": [
         "사천시",
         "경상남도사천시"
       ]
     },
     {
+      "id": "38370",
       "name": "산청군",
       "province": "경상남도",
       "provinceSource": "경상남도",
@@ -1346,13 +1907,23 @@ export const MAP_DATA = {
         622.39
       ],
       "area": 1132.68,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "38380",
+        "38030",
+        "38310",
+        "38360",
+        "38400",
+        "38390",
+        "38060",
+        "38320"
+      ],
       "acceptedAnswers": [
         "산청군",
         "경상남도산청군"
       ]
     },
     {
+      "id": "38100",
       "name": "양산시",
       "province": "경상남도",
       "provinceSource": "경상남도",
@@ -1369,13 +1940,23 @@ export const MAP_DATA = {
         620.47
       ],
       "area": 696.79,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "38070",
+        "38080",
+        "경상남도-창원시",
+        "38330",
+        "38320",
+        "38310",
+        "38090",
+        "38340"
+      ],
       "acceptedAnswers": [
         "양산시",
         "경상남도양산시"
       ]
     },
     {
+      "id": "38310",
       "name": "의령군",
       "province": "경상남도",
       "provinceSource": "경상남도",
@@ -1392,13 +1973,23 @@ export const MAP_DATA = {
         623.78
       ],
       "area": 690.08,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "38320",
+        "38030",
+        "38400",
+        "38330",
+        "38370",
+        "경상남도-창원시",
+        "38340",
+        "38060"
+      ],
       "acceptedAnswers": [
         "의령군",
         "경상남도의령군"
       ]
     },
     {
+      "id": "38030",
       "name": "진주시",
       "province": "경상남도",
       "provinceSource": "경상남도",
@@ -1415,13 +2006,23 @@ export const MAP_DATA = {
         648.34
       ],
       "area": 1020.98,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "38060",
+        "38310",
+        "38340",
+        "38320",
+        "38370",
+        "38360",
+        "경상남도-창원시",
+        "38400"
+      ],
       "acceptedAnswers": [
         "진주시",
         "경상남도진주시"
       ]
     },
     {
+      "id": "38330",
       "name": "창녕군",
       "province": "경상남도",
       "provinceSource": "경상남도",
@@ -1438,13 +2039,23 @@ export const MAP_DATA = {
         604.81
       ],
       "area": 759.01,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "38310",
+        "38080",
+        "38320",
+        "38400",
+        "경상남도-창원시",
+        "38070",
+        "38030",
+        "38100"
+      ],
       "acceptedAnswers": [
         "창녕군",
         "경상남도창녕군"
       ]
     },
     {
+      "id": "경상남도-창원시",
       "name": "창원시",
       "province": "경상남도",
       "provinceSource": "경상남도",
@@ -1461,13 +2072,23 @@ export const MAP_DATA = {
         645.04
       ],
       "area": 1075.96,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "38320",
+        "38070",
+        "38330",
+        "38080",
+        "38310",
+        "38340",
+        "38090",
+        "38030"
+      ],
       "acceptedAnswers": [
         "창원시",
         "경상남도창원시"
       ]
     },
     {
+      "id": "38050",
       "name": "통영시",
       "province": "경상남도",
       "provinceSource": "경상남도",
@@ -1484,13 +2105,23 @@ export const MAP_DATA = {
         707.04
       ],
       "area": 353.32,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "38090",
+        "38340",
+        "38350",
+        "38060",
+        "경상남도-창원시",
+        "38030",
+        "38320",
+        "38070"
+      ],
       "acceptedAnswers": [
         "통영시",
         "경상남도통영시"
       ]
     },
     {
+      "id": "38360",
       "name": "하동군",
       "province": "경상남도",
       "provinceSource": "경상남도",
@@ -1507,13 +2138,23 @@ export const MAP_DATA = {
         658.27
       ],
       "area": 971.31,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "38060",
+        "38370",
+        "38030",
+        "38350",
+        "38380",
+        "38340",
+        "38310",
+        "38320"
+      ],
       "acceptedAnswers": [
         "하동군",
         "경상남도하동군"
       ]
     },
     {
+      "id": "38320",
       "name": "함안군",
       "province": "경상남도",
       "provinceSource": "경상남도",
@@ -1530,13 +2171,23 @@ export const MAP_DATA = {
         637.18
       ],
       "area": 595.17,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "경상남도-창원시",
+        "38310",
+        "38330",
+        "38030",
+        "38340",
+        "38070",
+        "38080",
+        "38400"
+      ],
       "acceptedAnswers": [
         "함안군",
         "경상남도함안군"
       ]
     },
     {
+      "id": "38380",
       "name": "함양군",
       "province": "경상남도",
       "provinceSource": "경상남도",
@@ -1553,13 +2204,23 @@ export const MAP_DATA = {
         603.08
       ],
       "area": 1032.49,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "38370",
+        "38390",
+        "38400",
+        "38360",
+        "38310",
+        "38030",
+        "38060",
+        "38330"
+      ],
       "acceptedAnswers": [
         "함양군",
         "경상남도함양군"
       ]
     },
     {
+      "id": "38400",
       "name": "합천군",
       "province": "경상남도",
       "provinceSource": "경상남도",
@@ -1576,13 +2237,23 @@ export const MAP_DATA = {
         595.4
       ],
       "area": 1408.36,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "38310",
+        "38390",
+        "38330",
+        "38370",
+        "38380",
+        "38320",
+        "38030",
+        "경상남도-창원시"
+      ],
       "acceptedAnswers": [
         "합천군",
         "경상남도합천군"
       ]
     },
     {
+      "id": "37100",
       "name": "경산시",
       "province": "경상북도",
       "provinceSource": "경상북도",
@@ -1599,13 +2270,23 @@ export const MAP_DATA = {
         561.94
       ],
       "area": 588.46,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "37360",
+        "37070",
+        "37390",
+        "37020",
+        "37310",
+        "37370",
+        "경상북도-포항시",
+        "37380"
+      ],
       "acceptedAnswers": [
         "경산시",
         "경상북도경산시"
       ]
     },
     {
+      "id": "37020",
       "name": "경주시",
       "province": "경상북도",
       "provinceSource": "경상북도",
@@ -1622,13 +2303,23 @@ export const MAP_DATA = {
         559.56
       ],
       "area": 1890.16,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "경상북도-포항시",
+        "37070",
+        "37100",
+        "37360",
+        "37330",
+        "37310",
+        "37350",
+        "37390"
+      ],
       "acceptedAnswers": [
         "경주시",
         "경상북도경주시"
       ]
     },
     {
+      "id": "37370",
       "name": "고령군",
       "province": "경상북도",
       "provinceSource": "경상북도",
@@ -1645,13 +2336,23 @@ export const MAP_DATA = {
         577.73
       ],
       "area": 553.44,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "37380",
+        "37390",
+        "37030",
+        "37360",
+        "37100",
+        "37050",
+        "37310",
+        "37070"
+      ],
       "acceptedAnswers": [
         "고령군",
         "경상북도고령군"
       ]
     },
     {
+      "id": "37050",
       "name": "구미시",
       "province": "경상북도",
       "provinceSource": "경상북도",
@@ -1668,13 +2369,23 @@ export const MAP_DATA = {
         514.07
       ],
       "area": 878.48,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "37390",
+        "37320",
+        "37310",
+        "37030",
+        "37380",
+        "37080",
+        "37400",
+        "37040"
+      ],
       "acceptedAnswers": [
         "구미시",
         "경상북도구미시"
       ]
     },
     {
+      "id": "37310",
       "name": "군위군",
       "province": "경상북도",
       "provinceSource": "경상북도",
@@ -1691,13 +2402,23 @@ export const MAP_DATA = {
         519.7
       ],
       "area": 877.89,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "37320",
+        "37390",
+        "37050",
+        "37070",
+        "37100",
+        "37330",
+        "37040",
+        "37380"
+      ],
       "acceptedAnswers": [
         "군위군",
         "경상북도군위군"
       ]
     },
     {
+      "id": "37030",
       "name": "김천시",
       "province": "경상북도",
       "provinceSource": "경상북도",
@@ -1714,13 +2435,23 @@ export const MAP_DATA = {
         536.56
       ],
       "area": 1439.11,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "37380",
+        "37050",
+        "37390",
+        "37370",
+        "37080",
+        "37310",
+        "37320",
+        "37100"
+      ],
       "acceptedAnswers": [
         "김천시",
         "경상북도김천시"
       ]
     },
     {
+      "id": "37090",
       "name": "문경시",
       "province": "경상북도",
       "provinceSource": "경상북도",
@@ -1737,13 +2468,23 @@ export const MAP_DATA = {
         450.36
       ],
       "area": 1309.07,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "37080",
+        "37400",
+        "37060",
+        "37040",
+        "37320",
+        "37050",
+        "37030",
+        "37410"
+      ],
       "acceptedAnswers": [
         "문경시",
         "경상북도문경시"
       ]
     },
     {
+      "id": "37410",
       "name": "봉화군",
       "province": "경상북도",
       "provinceSource": "경상북도",
@@ -1760,13 +2501,23 @@ export const MAP_DATA = {
         418.58
       ],
       "area": 1719.71,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "37060",
+        "37420",
+        "37340",
+        "37040",
+        "37400",
+        "37350",
+        "37330",
+        "37320"
+      ],
       "acceptedAnswers": [
         "봉화군",
         "경상북도봉화군"
       ]
     },
     {
+      "id": "37080",
       "name": "상주시",
       "province": "경상북도",
       "provinceSource": "경상북도",
@@ -1783,13 +2534,23 @@ export const MAP_DATA = {
         483.04
       ],
       "area": 1793.37,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "37090",
+        "37050",
+        "37400",
+        "37030",
+        "37320",
+        "37040",
+        "37390",
+        "37380"
+      ],
       "acceptedAnswers": [
         "상주시",
         "경상북도상주시"
       ]
     },
     {
+      "id": "37380",
       "name": "성주군",
       "province": "경상북도",
       "provinceSource": "경상북도",
@@ -1806,13 +2567,23 @@ export const MAP_DATA = {
         553.36
       ],
       "area": 877.44,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "37030",
+        "37370",
+        "37390",
+        "37050",
+        "37310",
+        "37100",
+        "37360",
+        "37320"
+      ],
       "acceptedAnswers": [
         "성주군",
         "경상북도성주군"
       ]
     },
     {
+      "id": "37040",
       "name": "안동시",
       "province": "경상북도",
       "provinceSource": "경상북도",
@@ -1829,13 +2600,23 @@ export const MAP_DATA = {
         467.22
       ],
       "area": 2186.66,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "37320",
+        "37400",
+        "37330",
+        "37060",
+        "37340",
+        "37410",
+        "37310",
+        "37050"
+      ],
       "acceptedAnswers": [
         "안동시",
         "경상북도안동시"
       ]
     },
     {
+      "id": "37350",
       "name": "영덕군",
       "province": "경상북도",
       "provinceSource": "경상북도",
@@ -1852,13 +2633,23 @@ export const MAP_DATA = {
         478.29
       ],
       "area": 1066.67,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "37330",
+        "37340",
+        "경상북도-포항시",
+        "37420",
+        "37040",
+        "37410",
+        "37070",
+        "37320"
+      ],
       "acceptedAnswers": [
         "영덕군",
         "경상북도영덕군"
       ]
     },
     {
+      "id": "37340",
       "name": "영양군",
       "province": "경상북도",
       "provinceSource": "경상북도",
@@ -1875,13 +2666,23 @@ export const MAP_DATA = {
         449.95
       ],
       "area": 1172.59,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "37420",
+        "37350",
+        "37410",
+        "37330",
+        "37040",
+        "37060",
+        "37320",
+        "37400"
+      ],
       "acceptedAnswers": [
         "영양군",
         "경상북도영양군"
       ]
     },
     {
+      "id": "37060",
       "name": "영주시",
       "province": "경상북도",
       "provinceSource": "경상북도",
@@ -1898,13 +2699,23 @@ export const MAP_DATA = {
         424.8
       ],
       "area": 963.12,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "37400",
+        "37410",
+        "37040",
+        "37090",
+        "37340",
+        "37320",
+        "37420",
+        "37080"
+      ],
       "acceptedAnswers": [
         "영주시",
         "경상북도영주시"
       ]
     },
     {
+      "id": "37070",
       "name": "영천시",
       "province": "경상북도",
       "provinceSource": "경상북도",
@@ -1921,13 +2732,23 @@ export const MAP_DATA = {
         540.35
       ],
       "area": 1310.87,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "37100",
+        "37310",
+        "37020",
+        "경상북도-포항시",
+        "37360",
+        "37390",
+        "37330",
+        "37320"
+      ],
       "acceptedAnswers": [
         "영천시",
         "경상북도영천시"
       ]
     },
     {
+      "id": "37400",
       "name": "예천군",
       "province": "경상북도",
       "provinceSource": "경상북도",
@@ -1944,13 +2765,23 @@ export const MAP_DATA = {
         455.59
       ],
       "area": 950.95,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "37040",
+        "37090",
+        "37060",
+        "37320",
+        "37080",
+        "37050",
+        "37410",
+        "37310"
+      ],
       "acceptedAnswers": [
         "예천군",
         "경상북도예천군"
       ]
     },
     {
+      "id": "37430",
       "name": "울릉군",
       "province": "경상북도",
       "provinceSource": "경상북도",
@@ -1967,13 +2798,23 @@ export const MAP_DATA = {
         348.89
       ],
       "area": 105.76,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "37420",
+        "37350",
+        "37340",
+        "37410",
+        "37330",
+        "경상북도-포항시",
+        "37060",
+        "37040"
+      ],
       "acceptedAnswers": [
         "울릉군",
         "경상북도울릉군"
       ]
     },
     {
+      "id": "37420",
       "name": "울진군",
       "province": "경상북도",
       "provinceSource": "경상북도",
@@ -1990,13 +2831,23 @@ export const MAP_DATA = {
         421.7
       ],
       "area": 1424.33,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "37340",
+        "37410",
+        "37350",
+        "37330",
+        "37060",
+        "37040",
+        "37400",
+        "37320"
+      ],
       "acceptedAnswers": [
         "울진군",
         "경상북도울진군"
       ]
     },
     {
+      "id": "37320",
       "name": "의성군",
       "province": "경상북도",
       "provinceSource": "경상북도",
@@ -2013,13 +2864,23 @@ export const MAP_DATA = {
         493.84
       ],
       "area": 1674.45,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "37310",
+        "37040",
+        "37050",
+        "37400",
+        "37390",
+        "37330",
+        "37080",
+        "37070"
+      ],
       "acceptedAnswers": [
         "의성군",
         "경상북도의성군"
       ]
     },
     {
+      "id": "37360",
       "name": "청도군",
       "province": "경상북도",
       "provinceSource": "경상북도",
@@ -2036,13 +2897,23 @@ export const MAP_DATA = {
         580.37
       ],
       "area": 992.16,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "37100",
+        "37070",
+        "37370",
+        "37390",
+        "37020",
+        "37310",
+        "37380",
+        "경상북도-포항시"
+      ],
       "acceptedAnswers": [
         "청도군",
         "경상북도청도군"
       ]
     },
     {
+      "id": "37330",
       "name": "청송군",
       "province": "경상북도",
       "provinceSource": "경상북도",
@@ -2059,13 +2930,23 @@ export const MAP_DATA = {
         491.1
       ],
       "area": 1212.84,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "37350",
+        "37340",
+        "37040",
+        "경상북도-포항시",
+        "37320",
+        "37070",
+        "37310",
+        "37020"
+      ],
       "acceptedAnswers": [
         "청송군",
         "경상북도청송군"
       ]
     },
     {
+      "id": "37390",
       "name": "칠곡군",
       "province": "경상북도",
       "provinceSource": "경상북도",
@@ -2082,13 +2963,23 @@ export const MAP_DATA = {
         541.15
       ],
       "area": 645.07,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "37380",
+        "37310",
+        "37050",
+        "37370",
+        "37030",
+        "37100",
+        "37320",
+        "37070"
+      ],
       "acceptedAnswers": [
         "칠곡군",
         "경상북도칠곡군"
       ]
     },
     {
+      "id": "경상북도-포항시",
       "name": "포항시",
       "province": "경상북도",
       "provinceSource": "경상북도",
@@ -2105,13 +2996,23 @@ export const MAP_DATA = {
         529.12
       ],
       "area": 1622.31,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "37020",
+        "37070",
+        "37330",
+        "37350",
+        "37100",
+        "37310",
+        "37360",
+        "37340"
+      ],
       "acceptedAnswers": [
         "포항시",
         "경상북도포항시"
       ]
     },
     {
+      "id": "24050",
       "name": "광산구",
       "province": "광주광역시",
       "provinceSource": "광주광역시",
@@ -2128,13 +3029,19 @@ export const MAP_DATA = {
         653.12
       ],
       "area": 317.65,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "24020",
+        "24030",
+        "24040",
+        "24010"
+      ],
       "acceptedAnswers": [
         "광산구",
         "광주광역시광산구"
       ]
     },
     {
+      "id": "24030",
       "name": "남구",
       "province": "광주광역시",
       "provinceSource": "광주광역시",
@@ -2151,13 +3058,19 @@ export const MAP_DATA = {
         661.52
       ],
       "area": 86.74,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "24020",
+        "24010",
+        "24050",
+        "24040"
+      ],
       "acceptedAnswers": [
         "남구",
         "광주광역시남구"
       ]
     },
     {
+      "id": "24010",
       "name": "동구",
       "province": "광주광역시",
       "provinceSource": "광주광역시",
@@ -2174,13 +3087,19 @@ export const MAP_DATA = {
         659.26
       ],
       "area": 69.61,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "24040",
+        "24020",
+        "24030",
+        "24050"
+      ],
       "acceptedAnswers": [
         "동구",
         "광주광역시동구"
       ]
     },
     {
+      "id": "24040",
       "name": "북구",
       "province": "광주광역시",
       "provinceSource": "광주광역시",
@@ -2197,13 +3116,19 @@ export const MAP_DATA = {
         649.89
       ],
       "area": 171.27,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "24010",
+        "24020",
+        "24030",
+        "24050"
+      ],
       "acceptedAnswers": [
         "북구",
         "광주광역시북구"
       ]
     },
     {
+      "id": "24020",
       "name": "서구",
       "province": "광주광역시",
       "provinceSource": "광주광역시",
@@ -2220,13 +3145,19 @@ export const MAP_DATA = {
         657.12
       ],
       "area": 67.98,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "24030",
+        "24040",
+        "24010",
+        "24050"
+      ],
       "acceptedAnswers": [
         "서구",
         "광주광역시서구"
       ]
     },
     {
+      "id": "22040",
       "name": "남구",
       "province": "대구광역시",
       "provinceSource": "대구광역시",
@@ -2243,13 +3174,22 @@ export const MAP_DATA = {
         563.95
       ],
       "area": 25.3,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "22010",
+        "22070",
+        "22030",
+        "22060",
+        "22310",
+        "22050",
+        "22020"
+      ],
       "acceptedAnswers": [
         "남구",
         "대구광역시남구"
       ]
     },
     {
+      "id": "22070",
       "name": "달서구",
       "province": "대구광역시",
       "provinceSource": "대구광역시",
@@ -2266,13 +3206,22 @@ export const MAP_DATA = {
         565.65
       ],
       "area": 89.13,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "22040",
+        "22310",
+        "22030",
+        "22010",
+        "22060",
+        "22050",
+        "22020"
+      ],
       "acceptedAnswers": [
         "달서구",
         "대구광역시달서구"
       ]
     },
     {
+      "id": "22310",
       "name": "달성군",
       "province": "대구광역시",
       "provinceSource": "대구광역시",
@@ -2289,13 +3238,22 @@ export const MAP_DATA = {
         571.94
       ],
       "area": 605.16,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "22070",
+        "22040",
+        "22030",
+        "22010",
+        "22060",
+        "22050",
+        "22020"
+      ],
       "acceptedAnswers": [
         "달성군",
         "대구광역시달성군"
       ]
     },
     {
+      "id": "22020",
       "name": "동구",
       "province": "대구광역시",
       "provinceSource": "대구광역시",
@@ -2312,13 +3270,22 @@ export const MAP_DATA = {
         550.49
       ],
       "area": 259.65,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "22050",
+        "22010",
+        "22060",
+        "22030",
+        "22040",
+        "22070",
+        "22310"
+      ],
       "acceptedAnswers": [
         "동구",
         "대구광역시동구"
       ]
     },
     {
+      "id": "22050",
       "name": "북구",
       "province": "대구광역시",
       "provinceSource": "대구광역시",
@@ -2335,13 +3302,22 @@ export const MAP_DATA = {
         551.03
       ],
       "area": 133.98,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "22030",
+        "22010",
+        "22020",
+        "22040",
+        "22070",
+        "22060",
+        "22310"
+      ],
       "acceptedAnswers": [
         "북구",
         "대구광역시북구"
       ]
     },
     {
+      "id": "22030",
       "name": "서구",
       "province": "대구광역시",
       "provinceSource": "대구광역시",
@@ -2358,13 +3334,22 @@ export const MAP_DATA = {
         558.4
       ],
       "area": 25.18,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "22010",
+        "22040",
+        "22070",
+        "22050",
+        "22060",
+        "22310",
+        "22020"
+      ],
       "acceptedAnswers": [
         "서구",
         "대구광역시서구"
       ]
     },
     {
+      "id": "22060",
       "name": "수성구",
       "province": "대구광역시",
       "provinceSource": "대구광역시",
@@ -2381,13 +3366,22 @@ export const MAP_DATA = {
         563.77
       ],
       "area": 110.28,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "22010",
+        "22040",
+        "22030",
+        "22020",
+        "22070",
+        "22050",
+        "22310"
+      ],
       "acceptedAnswers": [
         "수성구",
         "대구광역시수성구"
       ]
     },
     {
+      "id": "22010",
       "name": "중구",
       "province": "대구광역시",
       "provinceSource": "대구광역시",
@@ -2404,13 +3398,22 @@ export const MAP_DATA = {
         559.48
       ],
       "area": 10.14,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "22040",
+        "22030",
+        "22060",
+        "22050",
+        "22070",
+        "22020",
+        "22310"
+      ],
       "acceptedAnswers": [
         "중구",
         "대구광역시중구"
       ]
     },
     {
+      "id": "25050",
       "name": "대덕구",
       "province": "대전광역시",
       "provinceSource": "대전광역시",
@@ -2427,13 +3430,19 @@ export const MAP_DATA = {
         488.21
       ],
       "area": 99.28,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "25040",
+        "25010",
+        "25020",
+        "25030"
+      ],
       "acceptedAnswers": [
         "대덕구",
         "대전광역시대덕구"
       ]
     },
     {
+      "id": "25010",
       "name": "동구",
       "province": "대전광역시",
       "provinceSource": "대전광역시",
@@ -2450,13 +3459,19 @@ export const MAP_DATA = {
         500.4
       ],
       "area": 196.72,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "25020",
+        "25050",
+        "25030",
+        "25040"
+      ],
       "acceptedAnswers": [
         "동구",
         "대전광역시동구"
       ]
     },
     {
+      "id": "25030",
       "name": "서구",
       "province": "대전광역시",
       "provinceSource": "대전광역시",
@@ -2473,13 +3488,19 @@ export const MAP_DATA = {
         505.69
       ],
       "area": 136.31,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "25020",
+        "25040",
+        "25010",
+        "25050"
+      ],
       "acceptedAnswers": [
         "서구",
         "대전광역시서구"
       ]
     },
     {
+      "id": "25040",
       "name": "유성구",
       "province": "대전광역시",
       "provinceSource": "대전광역시",
@@ -2496,13 +3517,19 @@ export const MAP_DATA = {
         491.76
       ],
       "area": 251.79,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "25050",
+        "25030",
+        "25020",
+        "25010"
+      ],
       "acceptedAnswers": [
         "유성구",
         "대전광역시유성구"
       ]
     },
     {
+      "id": "25020",
       "name": "중구",
       "province": "대전광역시",
       "provinceSource": "대전광역시",
@@ -2519,13 +3546,19 @@ export const MAP_DATA = {
         505.55
       ],
       "area": 88.67,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "25030",
+        "25010",
+        "25040",
+        "25050"
+      ],
       "acceptedAnswers": [
         "중구",
         "대전광역시중구"
       ]
     },
     {
+      "id": "21120",
       "name": "강서구",
       "province": "부산광역시",
       "provinceSource": "부산광역시",
@@ -2542,13 +3575,23 @@ export const MAP_DATA = {
         659.24
       ],
       "area": 265.5,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "21100",
+        "21150",
+        "21020",
+        "21010",
+        "21030",
+        "21050",
+        "21040",
+        "21080"
+      ],
       "acceptedAnswers": [
         "강서구",
         "부산광역시강서구"
       ]
     },
     {
+      "id": "21110",
       "name": "금정구",
       "province": "부산광역시",
       "provinceSource": "부산광역시",
@@ -2565,13 +3608,23 @@ export const MAP_DATA = {
         639.54
       ],
       "area": 94.08,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "21060",
+        "21080",
+        "21130",
+        "21090",
+        "21050",
+        "21310",
+        "21140",
+        "21150"
+      ],
       "acceptedAnswers": [
         "금정구",
         "부산광역시금정구"
       ]
     },
     {
+      "id": "21310",
       "name": "기장군",
       "province": "부산광역시",
       "provinceSource": "부산광역시",
@@ -2588,13 +3641,23 @@ export const MAP_DATA = {
         635.76
       ],
       "area": 314.33,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "21090",
+        "21110",
+        "21060",
+        "21140",
+        "21130",
+        "21080",
+        "21050",
+        "21070"
+      ],
       "acceptedAnswers": [
         "기장군",
         "부산광역시기장군"
       ]
     },
     {
+      "id": "21070",
       "name": "남구",
       "province": "부산광역시",
       "provinceSource": "부산광역시",
@@ -2611,13 +3674,23 @@ export const MAP_DATA = {
         657.53
       ],
       "area": 39.42,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "21140",
+        "21030",
+        "21040",
+        "21010",
+        "21130",
+        "21050",
+        "21020",
+        "21060"
+      ],
       "acceptedAnswers": [
         "남구",
         "부산광역시남구"
       ]
     },
     {
+      "id": "21030",
       "name": "동구",
       "province": "부산광역시",
       "provinceSource": "부산광역시",
@@ -2634,13 +3707,23 @@ export const MAP_DATA = {
         657.09
       ],
       "area": 14.35,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "21010",
+        "21050",
+        "21070",
+        "21020",
+        "21040",
+        "21150",
+        "21130",
+        "21140"
+      ],
       "acceptedAnswers": [
         "동구",
         "부산광역시동구"
       ]
     },
     {
+      "id": "21060",
       "name": "동래구",
       "province": "부산광역시",
       "provinceSource": "부산광역시",
@@ -2657,13 +3740,23 @@ export const MAP_DATA = {
         646.69
       ],
       "area": 23.87,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "21130",
+        "21050",
+        "21140",
+        "21080",
+        "21110",
+        "21090",
+        "21070",
+        "21030"
+      ],
       "acceptedAnswers": [
         "동래구",
         "부산광역시동래구"
       ]
     },
     {
+      "id": "21050",
       "name": "부산진구",
       "province": "부산광역시",
       "provinceSource": "부산광역시",
@@ -2680,13 +3773,23 @@ export const MAP_DATA = {
         651.68
       ],
       "area": 42.74,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "21130",
+        "21030",
+        "21060",
+        "21150",
+        "21140",
+        "21070",
+        "21010",
+        "21080"
+      ],
       "acceptedAnswers": [
         "부산진구",
         "부산광역시부산진구"
       ]
     },
     {
+      "id": "21080",
       "name": "북구",
       "province": "부산광역시",
       "provinceSource": "부산광역시",
@@ -2703,13 +3806,23 @@ export const MAP_DATA = {
         643.15
       ],
       "area": 57.37,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "21060",
+        "21110",
+        "21050",
+        "21130",
+        "21150",
+        "21140",
+        "21030",
+        "21090"
+      ],
       "acceptedAnswers": [
         "북구",
         "부산광역시북구"
       ]
     },
     {
+      "id": "21150",
       "name": "사상구",
       "province": "부산광역시",
       "provinceSource": "부산광역시",
@@ -2726,13 +3839,23 @@ export const MAP_DATA = {
         652.91
       ],
       "area": 51.82,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "21050",
+        "21030",
+        "21010",
+        "21020",
+        "21130",
+        "21080",
+        "21060",
+        "21070"
+      ],
       "acceptedAnswers": [
         "사상구",
         "부산광역시사상구"
       ]
     },
     {
+      "id": "21100",
       "name": "사하구",
       "province": "부산광역시",
       "provinceSource": "부산광역시",
@@ -2749,13 +3872,23 @@ export const MAP_DATA = {
         666.41
       ],
       "area": 66.94,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "21020",
+        "21010",
+        "21040",
+        "21120",
+        "21030",
+        "21150",
+        "21070",
+        "21050"
+      ],
       "acceptedAnswers": [
         "사하구",
         "부산광역시사하구"
       ]
     },
     {
+      "id": "21020",
       "name": "서구",
       "province": "부산광역시",
       "provinceSource": "부산광역시",
@@ -2772,13 +3905,23 @@ export const MAP_DATA = {
         661.52
       ],
       "area": 20.15,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "21010",
+        "21030",
+        "21040",
+        "21100",
+        "21150",
+        "21070",
+        "21050",
+        "21130"
+      ],
       "acceptedAnswers": [
         "서구",
         "부산광역시서구"
       ]
     },
     {
+      "id": "21140",
       "name": "수영구",
       "province": "부산광역시",
       "provinceSource": "부산광역시",
@@ -2795,13 +3938,23 @@ export const MAP_DATA = {
         652.45
       ],
       "area": 14.85,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "21130",
+        "21070",
+        "21060",
+        "21090",
+        "21050",
+        "21030",
+        "21010",
+        "21040"
+      ],
       "acceptedAnswers": [
         "수영구",
         "부산광역시수영구"
       ]
     },
     {
+      "id": "21130",
       "name": "연제구",
       "province": "부산광역시",
       "provinceSource": "부산광역시",
@@ -2818,13 +3971,23 @@ export const MAP_DATA = {
         650.14
       ],
       "area": 17.33,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "21060",
+        "21050",
+        "21140",
+        "21070",
+        "21030",
+        "21090",
+        "21080",
+        "21150"
+      ],
       "acceptedAnswers": [
         "연제구",
         "부산광역시연제구"
       ]
     },
     {
+      "id": "21040",
       "name": "영도구",
       "province": "부산광역시",
       "provinceSource": "부산광역시",
@@ -2841,13 +4004,23 @@ export const MAP_DATA = {
         663.67
       ],
       "area": 20.82,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "21010",
+        "21020",
+        "21070",
+        "21030",
+        "21100",
+        "21140",
+        "21050",
+        "21130"
+      ],
       "acceptedAnswers": [
         "영도구",
         "부산광역시영도구"
       ]
     },
     {
+      "id": "21010",
       "name": "중구",
       "province": "부산광역시",
       "provinceSource": "부산광역시",
@@ -2864,13 +4037,23 @@ export const MAP_DATA = {
         659.89
       ],
       "area": 4.41,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "21020",
+        "21030",
+        "21040",
+        "21070",
+        "21050",
+        "21150",
+        "21100",
+        "21130"
+      ],
       "acceptedAnswers": [
         "중구",
         "부산광역시중구"
       ]
     },
     {
+      "id": "21090",
       "name": "해운대구",
       "province": "부산광역시",
       "provinceSource": "부산광역시",
@@ -2887,13 +4070,23 @@ export const MAP_DATA = {
         647.06
       ],
       "area": 74.78,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "21140",
+        "21060",
+        "21130",
+        "21110",
+        "21310",
+        "21070",
+        "21050",
+        "21080"
+      ],
       "acceptedAnswers": [
         "해운대구",
         "부산광역시해운대구"
       ]
     },
     {
+      "id": "11230",
       "name": "강남구",
       "province": "서울특별시",
       "provinceSource": "서울특별시",
@@ -2910,13 +4103,23 @@ export const MAP_DATA = {
         343.79
       ],
       "area": 56.49,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "11220",
+        "11240",
+        "11050",
+        "11040",
+        "11030",
+        "11250",
+        "11020",
+        "11060"
+      ],
       "acceptedAnswers": [
         "강남구",
         "서울특별시강남구"
       ]
     },
     {
+      "id": "11250",
       "name": "강동구",
       "province": "서울특별시",
       "provinceSource": "서울특별시",
@@ -2933,13 +4136,23 @@ export const MAP_DATA = {
         336.81
       ],
       "area": 35.15,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "11050",
+        "11240",
+        "11070",
+        "11230",
+        "11040",
+        "11060",
+        "11220",
+        "11080"
+      ],
       "acceptedAnswers": [
         "강동구",
         "서울특별시강동구"
       ]
     },
     {
+      "id": "11090",
       "name": "강북구",
       "province": "서울특별시",
       "provinceSource": "서울특별시",
@@ -2956,13 +4169,23 @@ export const MAP_DATA = {
         323.72
       ],
       "area": 33.98,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "11100",
+        "11080",
+        "11110",
+        "11010",
+        "11060",
+        "11120",
+        "11070",
+        "11130"
+      ],
       "acceptedAnswers": [
         "강북구",
         "서울특별시강북구"
       ]
     },
     {
+      "id": "11160",
       "name": "강서구",
       "province": "서울특별시",
       "provinceSource": "서울특별시",
@@ -2979,13 +4202,23 @@ export const MAP_DATA = {
         334.39
       ],
       "area": 59.34,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "11150",
+        "11140",
+        "11170",
+        "11190",
+        "11130",
+        "11120",
+        "11200",
+        "11180"
+      ],
       "acceptedAnswers": [
         "강서구",
         "서울특별시강서구"
       ]
     },
     {
+      "id": "11210",
       "name": "관악구",
       "province": "서울특별시",
       "provinceSource": "서울특별시",
@@ -3002,13 +4235,23 @@ export const MAP_DATA = {
         347.8
       ],
       "area": 42.09,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "11200",
+        "11180",
+        "11190",
+        "11030",
+        "11170",
+        "11220",
+        "11150",
+        "11020"
+      ],
       "acceptedAnswers": [
         "관악구",
         "서울특별시관악구"
       ]
     },
     {
+      "id": "11050",
       "name": "광진구",
       "province": "서울특별시",
       "provinceSource": "서울특별시",
@@ -3025,13 +4268,23 @@ export const MAP_DATA = {
         336.87
       ],
       "area": 24.28,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "11040",
+        "11060",
+        "11070",
+        "11250",
+        "11240",
+        "11230",
+        "11020",
+        "11080"
+      ],
       "acceptedAnswers": [
         "광진구",
         "서울특별시광진구"
       ]
     },
     {
+      "id": "11170",
       "name": "구로구",
       "province": "서울특별시",
       "provinceSource": "서울특별시",
@@ -3048,13 +4301,23 @@ export const MAP_DATA = {
         343.73
       ],
       "area": 28.93,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "11150",
+        "11180",
+        "11190",
+        "11200",
+        "11210",
+        "11160",
+        "11140",
+        "11030"
+      ],
       "acceptedAnswers": [
         "구로구",
         "서울특별시구로구"
       ]
     },
     {
+      "id": "11180",
       "name": "금천구",
       "province": "서울특별시",
       "provinceSource": "서울특별시",
@@ -3071,13 +4334,23 @@ export const MAP_DATA = {
         348.48
       ],
       "area": 18.64,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "11210",
+        "11170",
+        "11200",
+        "11190",
+        "11150",
+        "11030",
+        "11140",
+        "11220"
+      ],
       "acceptedAnswers": [
         "금천구",
         "서울특별시금천구"
       ]
     },
     {
+      "id": "11110",
       "name": "노원구",
       "province": "서울특별시",
       "provinceSource": "서울특별시",
@@ -3094,13 +4367,23 @@ export const MAP_DATA = {
         322.67
       ],
       "area": 50.65,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "11100",
+        "11090",
+        "11070",
+        "11080",
+        "11060",
+        "11010",
+        "11050",
+        "11040"
+      ],
       "acceptedAnswers": [
         "노원구",
         "서울특별시노원구"
       ]
     },
     {
+      "id": "11100",
       "name": "도봉구",
       "province": "서울특별시",
       "provinceSource": "서울특별시",
@@ -3117,13 +4400,23 @@ export const MAP_DATA = {
         321.22
       ],
       "area": 29.59,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "11090",
+        "11110",
+        "11080",
+        "11010",
+        "11060",
+        "11070",
+        "11120",
+        "11020"
+      ],
       "acceptedAnswers": [
         "도봉구",
         "서울특별시도봉구"
       ]
     },
     {
+      "id": "11060",
       "name": "동대문구",
       "province": "서울특별시",
       "provinceSource": "서울특별시",
@@ -3140,13 +4433,23 @@ export const MAP_DATA = {
         332.06
       ],
       "area": 20.55,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "11080",
+        "11040",
+        "11070",
+        "11050",
+        "11020",
+        "11010",
+        "11090",
+        "11110"
+      ],
       "acceptedAnswers": [
         "동대문구",
         "서울특별시동대문구"
       ]
     },
     {
+      "id": "11200",
       "name": "동작구",
       "province": "서울특별시",
       "provinceSource": "서울특별시",
@@ -3163,13 +4466,23 @@ export const MAP_DATA = {
         343.68
       ],
       "area": 23.78,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "11210",
+        "11190",
+        "11030",
+        "11180",
+        "11170",
+        "11140",
+        "11020",
+        "11150"
+      ],
       "acceptedAnswers": [
         "동작구",
         "서울특별시동작구"
       ]
     },
     {
+      "id": "11140",
       "name": "마포구",
       "province": "서울특별시",
       "provinceSource": "서울특별시",
@@ -3186,13 +4499,23 @@ export const MAP_DATA = {
         334.91
       ],
       "area": 34.22,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "11130",
+        "11190",
+        "11150",
+        "11120",
+        "11030",
+        "11020",
+        "11160",
+        "11200"
+      ],
       "acceptedAnswers": [
         "마포구",
         "서울특별시마포구"
       ]
     },
     {
+      "id": "11130",
       "name": "서대문구",
       "province": "서울특별시",
       "provinceSource": "서울특별시",
@@ -3209,13 +4532,23 @@ export const MAP_DATA = {
         332.2
       ],
       "area": 25.07,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "11140",
+        "11120",
+        "11010",
+        "11020",
+        "11030",
+        "11190",
+        "11080",
+        "11150"
+      ],
       "acceptedAnswers": [
         "서대문구",
         "서울특별시서대문구"
       ]
     },
     {
+      "id": "11220",
       "name": "서초구",
       "province": "서울특별시",
       "provinceSource": "서울특별시",
@@ -3232,13 +4565,23 @@ export const MAP_DATA = {
         346.28
       ],
       "area": 67.36,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "11230",
+        "11240",
+        "11030",
+        "11040",
+        "11210",
+        "11200",
+        "11050",
+        "11020"
+      ],
       "acceptedAnswers": [
         "서초구",
         "서울특별시서초구"
       ]
     },
     {
+      "id": "11040",
       "name": "성동구",
       "province": "서울특별시",
       "provinceSource": "서울특별시",
@@ -3255,13 +4598,23 @@ export const MAP_DATA = {
         336.56
       ],
       "area": 23.91,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "11060",
+        "11050",
+        "11020",
+        "11030",
+        "11230",
+        "11080",
+        "11070",
+        "11010"
+      ],
       "acceptedAnswers": [
         "성동구",
         "서울특별시성동구"
       ]
     },
     {
+      "id": "11080",
       "name": "성북구",
       "province": "서울특별시",
       "provinceSource": "서울특별시",
@@ -3278,13 +4631,23 @@ export const MAP_DATA = {
         329.03
       ],
       "area": 35.04,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "11010",
+        "11060",
+        "11090",
+        "11020",
+        "11070",
+        "11040",
+        "11100",
+        "11110"
+      ],
       "acceptedAnswers": [
         "성북구",
         "서울특별시성북구"
       ]
     },
     {
+      "id": "11240",
       "name": "송파구",
       "province": "서울특별시",
       "provinceSource": "서울특별시",
@@ -3301,13 +4664,23 @@ export const MAP_DATA = {
         342.65
       ],
       "area": 48.7,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "11230",
+        "11050",
+        "11250",
+        "11220",
+        "11040",
+        "11070",
+        "11060",
+        "11020"
+      ],
       "acceptedAnswers": [
         "송파구",
         "서울특별시송파구"
       ]
     },
     {
+      "id": "11150",
       "name": "양천구",
       "province": "서울특별시",
       "provinceSource": "서울특별시",
@@ -3324,13 +4697,23 @@ export const MAP_DATA = {
         339.56
       ],
       "area": 24.95,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "11170",
+        "11190",
+        "11160",
+        "11140",
+        "11180",
+        "11200",
+        "11130",
+        "11210"
+      ],
       "acceptedAnswers": [
         "양천구",
         "서울특별시양천구"
       ]
     },
     {
+      "id": "11190",
       "name": "영등포구",
       "province": "서울특별시",
       "provinceSource": "서울특별시",
@@ -3347,13 +4730,23 @@ export const MAP_DATA = {
         340.43
       ],
       "area": 34.84,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "11200",
+        "11140",
+        "11150",
+        "11170",
+        "11030",
+        "11210",
+        "11180",
+        "11130"
+      ],
       "acceptedAnswers": [
         "영등포구",
         "서울특별시영등포구"
       ]
     },
     {
+      "id": "11030",
       "name": "용산구",
       "province": "서울특별시",
       "provinceSource": "서울특별시",
@@ -3370,13 +4763,23 @@ export const MAP_DATA = {
         339.1
       ],
       "area": 31.22,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "11020",
+        "11200",
+        "11040",
+        "11190",
+        "11130",
+        "11140",
+        "11010",
+        "11220"
+      ],
       "acceptedAnswers": [
         "용산구",
         "서울특별시용산구"
       ]
     },
     {
+      "id": "11120",
       "name": "은평구",
       "province": "서울특별시",
       "provinceSource": "서울특별시",
@@ -3393,13 +4796,23 @@ export const MAP_DATA = {
         327.58
       ],
       "area": 42.15,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "11130",
+        "11010",
+        "11140",
+        "11090",
+        "11080",
+        "11020",
+        "11160",
+        "11190"
+      ],
       "acceptedAnswers": [
         "은평구",
         "서울특별시은평구"
       ]
     },
     {
+      "id": "11010",
       "name": "종로구",
       "province": "서울특별시",
       "provinceSource": "서울특별시",
@@ -3416,13 +4829,23 @@ export const MAP_DATA = {
         330.06
       ],
       "area": 34.52,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "11080",
+        "11020",
+        "11130",
+        "11090",
+        "11060",
+        "11120",
+        "11040",
+        "11030"
+      ],
       "acceptedAnswers": [
         "종로구",
         "서울특별시종로구"
       ]
     },
     {
+      "id": "11020",
       "name": "중구",
       "province": "서울특별시",
       "provinceSource": "서울특별시",
@@ -3439,13 +4862,23 @@ export const MAP_DATA = {
         335.56
       ],
       "area": 14.27,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "11030",
+        "11040",
+        "11010",
+        "11060",
+        "11130",
+        "11080",
+        "11140",
+        "11200"
+      ],
       "acceptedAnswers": [
         "중구",
         "서울특별시중구"
       ]
     },
     {
+      "id": "11070",
       "name": "중랑구",
       "province": "서울특별시",
       "provinceSource": "서울특별시",
@@ -3462,13 +4895,23 @@ export const MAP_DATA = {
         330.67
       ],
       "area": 26.44,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "11060",
+        "11050",
+        "11080",
+        "11040",
+        "11110",
+        "11250",
+        "11090",
+        "11010"
+      ],
       "acceptedAnswers": [
         "중랑구",
         "서울특별시중랑구"
       ]
     },
     {
+      "id": "29010",
       "name": "세종시",
       "province": "세종특별자치시",
       "provinceSource": "세종특별자치시",
@@ -3492,6 +4935,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "26020",
       "name": "남구",
       "province": "울산광역시",
       "provinceSource": "울산광역시",
@@ -3508,13 +4952,19 @@ export const MAP_DATA = {
         606.33
       ],
       "area": 105.81,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "26010",
+        "26030",
+        "26040",
+        "26310"
+      ],
       "acceptedAnswers": [
         "남구",
         "울산광역시남구"
       ]
     },
     {
+      "id": "26030",
       "name": "동구",
       "province": "울산광역시",
       "provinceSource": "울산광역시",
@@ -3531,13 +4981,19 @@ export const MAP_DATA = {
         604.31
       ],
       "area": 52.7,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "26040",
+        "26020",
+        "26010",
+        "26310"
+      ],
       "acceptedAnswers": [
         "동구",
         "울산광역시동구"
       ]
     },
     {
+      "id": "26040",
       "name": "북구",
       "province": "울산광역시",
       "provinceSource": "울산광역시",
@@ -3554,13 +5010,19 @@ export const MAP_DATA = {
         593.97
       ],
       "area": 226.42,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "26010",
+        "26030",
+        "26020",
+        "26310"
+      ],
       "acceptedAnswers": [
         "북구",
         "울산광역시북구"
       ]
     },
     {
+      "id": "26310",
       "name": "울주군",
       "province": "울산광역시",
       "provinceSource": "울산광역시",
@@ -3577,13 +5039,19 @@ export const MAP_DATA = {
         603.73
       ],
       "area": 1083.37,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "26010",
+        "26020",
+        "26040",
+        "26030"
+      ],
       "acceptedAnswers": [
         "울주군",
         "울산광역시울주군"
       ]
     },
     {
+      "id": "26010",
       "name": "중구",
       "province": "울산광역시",
       "provinceSource": "울산광역시",
@@ -3600,13 +5068,19 @@ export const MAP_DATA = {
         597.51
       ],
       "area": 52.93,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "26040",
+        "26020",
+        "26030",
+        "26310"
+      ],
       "acceptedAnswers": [
         "중구",
         "울산광역시중구"
       ]
     },
     {
+      "id": "23310",
       "name": "강화군",
       "province": "인천광역시",
       "provinceSource": "인천광역시",
@@ -3623,13 +5097,23 @@ export const MAP_DATA = {
         315.46
       ],
       "area": 591.27,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "23010",
+        "23080",
+        "23020",
+        "23090",
+        "23070",
+        "23060",
+        "23040",
+        "23050"
+      ],
       "acceptedAnswers": [
         "강화군",
         "인천광역시강화군"
       ]
     },
     {
+      "id": "23070",
       "name": "계양구",
       "province": "인천광역시",
       "provinceSource": "인천광역시",
@@ -3646,13 +5130,23 @@ export const MAP_DATA = {
         335.25
       ],
       "area": 64.97,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "23060",
+        "23080",
+        "23020",
+        "23090",
+        "23050",
+        "23040",
+        "23010",
+        "23310"
+      ],
       "acceptedAnswers": [
         "계양구",
         "인천광역시계양구"
       ]
     },
     {
+      "id": "23050",
       "name": "남동구",
       "province": "인천광역시",
       "provinceSource": "인천광역시",
@@ -3669,13 +5163,23 @@ export const MAP_DATA = {
         352.24
       ],
       "area": 82.61,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "23090",
+        "23060",
+        "23040",
+        "23020",
+        "23070",
+        "23080",
+        "23010",
+        "23310"
+      ],
       "acceptedAnswers": [
         "남동구",
         "인천광역시남동구"
       ]
     },
     {
+      "id": "23020",
       "name": "동구",
       "province": "인천광역시",
       "provinceSource": "인천광역시",
@@ -3692,13 +5196,23 @@ export const MAP_DATA = {
         345.34
       ],
       "area": 10.42,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "23090",
+        "23060",
+        "23080",
+        "23050",
+        "23040",
+        "23070",
+        "23010",
+        "23310"
+      ],
       "acceptedAnswers": [
         "동구",
         "인천광역시동구"
       ]
     },
     {
+      "id": "23090",
       "name": "미추홀구",
       "province": "인천광역시",
       "provinceSource": "인천광역시",
@@ -3715,13 +5229,23 @@ export const MAP_DATA = {
         348.69
       ],
       "area": 35.39,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "23020",
+        "23050",
+        "23060",
+        "23040",
+        "23080",
+        "23070",
+        "23010",
+        "23310"
+      ],
       "acceptedAnswers": [
         "미추홀구",
         "인천광역시미추홀구"
       ]
     },
     {
+      "id": "23060",
       "name": "부평구",
       "province": "인천광역시",
       "provinceSource": "인천광역시",
@@ -3738,13 +5262,23 @@ export const MAP_DATA = {
         343.81
       ],
       "area": 45.76,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "23090",
+        "23050",
+        "23070",
+        "23020",
+        "23080",
+        "23040",
+        "23010",
+        "23310"
+      ],
       "acceptedAnswers": [
         "부평구",
         "인천광역시부평구"
       ]
     },
     {
+      "id": "23080",
       "name": "서구",
       "province": "인천광역시",
       "provinceSource": "인천광역시",
@@ -3761,13 +5295,23 @@ export const MAP_DATA = {
         335.7
       ],
       "area": 189.78,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "23020",
+        "23070",
+        "23060",
+        "23090",
+        "23050",
+        "23010",
+        "23040",
+        "23310"
+      ],
       "acceptedAnswers": [
         "서구",
         "인천광역시서구"
       ]
     },
     {
+      "id": "23040",
       "name": "연수구",
       "province": "인천광역시",
       "provinceSource": "인천광역시",
@@ -3784,13 +5328,23 @@ export const MAP_DATA = {
         357.83
       ],
       "area": 88.26,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "23090",
+        "23050",
+        "23020",
+        "23060",
+        "23010",
+        "23080",
+        "23070",
+        "23310"
+      ],
       "acceptedAnswers": [
         "연수구",
         "인천광역시연수구"
       ]
     },
     {
+      "id": "23320",
       "name": "옹진군",
       "province": "인천광역시",
       "provinceSource": "인천광역시",
@@ -3807,13 +5361,23 @@ export const MAP_DATA = {
         346.22
       ],
       "area": 261.52,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "23310",
+        "23010",
+        "23020",
+        "23080",
+        "23040",
+        "23090",
+        "23050",
+        "23060"
+      ],
       "acceptedAnswers": [
         "옹진군",
         "인천광역시옹진군"
       ]
     },
     {
+      "id": "23010",
       "name": "중구",
       "province": "인천광역시",
       "provinceSource": "인천광역시",
@@ -3830,13 +5394,23 @@ export const MAP_DATA = {
         349.45
       ],
       "area": 206.48,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "23020",
+        "23040",
+        "23090",
+        "23080",
+        "23050",
+        "23060",
+        "23070",
+        "23310"
+      ],
       "acceptedAnswers": [
         "중구",
         "인천광역시중구"
       ]
     },
     {
+      "id": "36390",
       "name": "강진군",
       "province": "전라남도",
       "provinceSource": "전라남도",
@@ -3853,13 +5427,23 @@ export const MAP_DATA = {
         725.8
       ],
       "area": 717.57,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "36380",
+        "36410",
+        "36400",
+        "36010",
+        "36040",
+        "36460",
+        "36360",
+        "36370"
+      ],
       "acceptedAnswers": [
         "강진군",
         "전라남도강진군"
       ]
     },
     {
+      "id": "36350",
       "name": "고흥군",
       "province": "전라남도",
       "provinceSource": "전라남도",
@@ -3876,13 +5460,23 @@ export const MAP_DATA = {
         731.96
       ],
       "area": 1163.61,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "36020",
+        "36360",
+        "36380",
+        "36030",
+        "36390",
+        "36370",
+        "36060",
+        "36460"
+      ],
       "acceptedAnswers": [
         "고흥군",
         "전라남도고흥군"
       ]
     },
     {
+      "id": "36320",
       "name": "곡성군",
       "province": "전라남도",
       "provinceSource": "전라남도",
@@ -3899,13 +5493,23 @@ export const MAP_DATA = {
         648.24
       ],
       "area": 785.18,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "36330",
+        "36030",
+        "36310",
+        "36370",
+        "36060",
+        "36360",
+        "36450",
+        "36040"
+      ],
       "acceptedAnswers": [
         "곡성군",
         "전라남도곡성군"
       ]
     },
     {
+      "id": "36060",
       "name": "광양시",
       "province": "전라남도",
       "provinceSource": "전라남도",
@@ -3922,13 +5526,23 @@ export const MAP_DATA = {
         670.83
       ],
       "area": 675.17,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "36030",
+        "36330",
+        "36320",
+        "36360",
+        "36370",
+        "36350",
+        "36020",
+        "36310"
+      ],
       "acceptedAnswers": [
         "광양시",
         "전라남도광양시"
       ]
     },
     {
+      "id": "36330",
       "name": "구례군",
       "province": "전라남도",
       "provinceSource": "전라남도",
@@ -3945,13 +5559,23 @@ export const MAP_DATA = {
         644.76
       ],
       "area": 628.75,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "36320",
+        "36060",
+        "36030",
+        "36310",
+        "36370",
+        "36360",
+        "36450",
+        "36350"
+      ],
       "acceptedAnswers": [
         "구례군",
         "전라남도구례군"
       ]
     },
     {
+      "id": "36040",
       "name": "나주시",
       "province": "전라남도",
       "provinceSource": "전라남도",
@@ -3968,13 +5592,23 @@ export const MAP_DATA = {
         676.06
       ],
       "area": 867.16,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "36430",
+        "36410",
+        "36420",
+        "36370",
+        "36010",
+        "36450",
+        "36310",
+        "36390"
+      ],
       "acceptedAnswers": [
         "나주시",
         "전라남도나주시"
       ]
     },
     {
+      "id": "36310",
       "name": "담양군",
       "province": "전라남도",
       "provinceSource": "전라남도",
@@ -3991,13 +5625,23 @@ export const MAP_DATA = {
         636.48
       ],
       "area": 649.32,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "36450",
+        "36320",
+        "36370",
+        "36040",
+        "36330",
+        "36430",
+        "36030",
+        "36360"
+      ],
       "acceptedAnswers": [
         "담양군",
         "전라남도담양군"
       ]
     },
     {
+      "id": "36010",
       "name": "목포시",
       "province": "전라남도",
       "provinceSource": "전라남도",
@@ -4014,13 +5658,23 @@ export const MAP_DATA = {
         701.85
       ],
       "area": 76.75,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "36420",
+        "36410",
+        "36400",
+        "36430",
+        "36040",
+        "36390",
+        "36380",
+        "36470"
+      ],
       "acceptedAnswers": [
         "목포시",
         "전라남도목포시"
       ]
     },
     {
+      "id": "36420",
       "name": "무안군",
       "province": "전라남도",
       "provinceSource": "전라남도",
@@ -4037,13 +5691,23 @@ export const MAP_DATA = {
         678.85
       ],
       "area": 653.17,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "36430",
+        "36010",
+        "36410",
+        "36040",
+        "36440",
+        "36400",
+        "36390",
+        "36450"
+      ],
       "acceptedAnswers": [
         "무안군",
         "전라남도무안군"
       ]
     },
     {
+      "id": "36360",
       "name": "보성군",
       "province": "전라남도",
       "provinceSource": "전라남도",
@@ -4060,13 +5724,23 @@ export const MAP_DATA = {
         700.21
       ],
       "area": 952.53,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "36030",
+        "36350",
+        "36370",
+        "36380",
+        "36320",
+        "36060",
+        "36390",
+        "36020"
+      ],
       "acceptedAnswers": [
         "보성군",
         "전라남도보성군"
       ]
     },
     {
+      "id": "36030",
       "name": "순천시",
       "province": "전라남도",
       "provinceSource": "전라남도",
@@ -4083,13 +5757,23 @@ export const MAP_DATA = {
         673.84
       ],
       "area": 1304.87,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "36320",
+        "36060",
+        "36330",
+        "36360",
+        "36370",
+        "36310",
+        "36350",
+        "36380"
+      ],
       "acceptedAnswers": [
         "순천시",
         "전라남도순천시"
       ]
     },
     {
+      "id": "36480",
       "name": "신안군",
       "province": "전라남도",
       "provinceSource": "전라남도",
@@ -4106,13 +5790,23 @@ export const MAP_DATA = {
         722.09
       ],
       "area": 966.62,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "36470",
+        "36010",
+        "36400",
+        "36420",
+        "36410",
+        "36430",
+        "36440",
+        "36390"
+      ],
       "acceptedAnswers": [
         "신안군",
         "전라남도신안군"
       ]
     },
     {
+      "id": "36020",
       "name": "여수시",
       "province": "전라남도",
       "provinceSource": "전라남도",
@@ -4129,13 +5823,23 @@ export const MAP_DATA = {
         747.88
       ],
       "area": 753.15,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "36350",
+        "36360",
+        "36380",
+        "36030",
+        "36060",
+        "36390",
+        "36460",
+        "36370"
+      ],
       "acceptedAnswers": [
         "여수시",
         "전라남도여수시"
       ]
     },
     {
+      "id": "36440",
       "name": "영광군",
       "province": "전라남도",
       "provinceSource": "전라남도",
@@ -4152,13 +5856,23 @@ export const MAP_DATA = {
         635
       ],
       "area": 687.26,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "36430",
+        "36420",
+        "36450",
+        "36040",
+        "36010",
+        "36310",
+        "36410",
+        "36370"
+      ],
       "acceptedAnswers": [
         "영광군",
         "전라남도영광군"
       ]
     },
     {
+      "id": "36410",
       "name": "영암군",
       "province": "전라남도",
       "provinceSource": "전라남도",
@@ -4175,13 +5889,23 @@ export const MAP_DATA = {
         701.08
       ],
       "area": 875.19,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "36010",
+        "36040",
+        "36390",
+        "36420",
+        "36400",
+        "36380",
+        "36430",
+        "36370"
+      ],
       "acceptedAnswers": [
         "영암군",
         "전라남도영암군"
       ]
     },
     {
+      "id": "36460",
       "name": "완도군",
       "province": "전라남도",
       "provinceSource": "전라남도",
@@ -4198,13 +5922,23 @@ export const MAP_DATA = {
         779.38
       ],
       "area": 579.74,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "36400",
+        "36390",
+        "36380",
+        "36350",
+        "36470",
+        "36410",
+        "36010",
+        "36020"
+      ],
       "acceptedAnswers": [
         "완도군",
         "전라남도완도군"
       ]
     },
     {
+      "id": "36450",
       "name": "장성군",
       "province": "전라남도",
       "provinceSource": "전라남도",
@@ -4221,13 +5955,23 @@ export const MAP_DATA = {
         629.94
       ],
       "area": 741.35,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "36310",
+        "36430",
+        "36040",
+        "36440",
+        "36370",
+        "36320",
+        "36420",
+        "36410"
+      ],
       "acceptedAnswers": [
         "장성군",
         "전라남도장성군"
       ]
     },
     {
+      "id": "36380",
       "name": "장흥군",
       "province": "전라남도",
       "provinceSource": "전라남도",
@@ -4244,13 +5988,23 @@ export const MAP_DATA = {
         721.49
       ],
       "area": 890.44,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "36390",
+        "36410",
+        "36360",
+        "36350",
+        "36370",
+        "36400",
+        "36040",
+        "36460"
+      ],
       "acceptedAnswers": [
         "장흥군",
         "전라남도장흥군"
       ]
     },
     {
+      "id": "36470",
       "name": "진도군",
       "province": "전라남도",
       "provinceSource": "전라남도",
@@ -4267,13 +6021,23 @@ export const MAP_DATA = {
         758.45
       ],
       "area": 644.81,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "36400",
+        "36480",
+        "36010",
+        "36460",
+        "36410",
+        "36390",
+        "36420",
+        "36380"
+      ],
       "acceptedAnswers": [
         "진도군",
         "전라남도진도군"
       ]
     },
     {
+      "id": "36430",
       "name": "함평군",
       "province": "전라남도",
       "provinceSource": "전라남도",
@@ -4290,13 +6054,23 @@ export const MAP_DATA = {
         660.92
       ],
       "area": 558.38,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "36420",
+        "36040",
+        "36440",
+        "36450",
+        "36410",
+        "36010",
+        "36370",
+        "36310"
+      ],
       "acceptedAnswers": [
         "함평군",
         "전라남도함평군"
       ]
     },
     {
+      "id": "36400",
       "name": "해남군",
       "province": "전라남도",
       "provinceSource": "전라남도",
@@ -4313,13 +6087,23 @@ export const MAP_DATA = {
         737.34
       ],
       "area": 1499.07,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "36390",
+        "36010",
+        "36410",
+        "36470",
+        "36380",
+        "36460",
+        "36420",
+        "36040"
+      ],
       "acceptedAnswers": [
         "해남군",
         "전라남도해남군"
       ]
     },
     {
+      "id": "36370",
       "name": "화순군",
       "province": "전라남도",
       "provinceSource": "전라남도",
@@ -4336,13 +6120,23 @@ export const MAP_DATA = {
         672.61
       ],
       "area": 1128,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "36040",
+        "36320",
+        "36360",
+        "36310",
+        "36030",
+        "36380",
+        "36450",
+        "36410"
+      ],
       "acceptedAnswers": [
         "화순군",
         "전라남도화순군"
       ]
     },
     {
+      "id": "35370",
       "name": "고창군",
       "province": "전북특별자치도",
       "provinceSource": "전라북도",
@@ -4359,7 +6153,16 @@ export const MAP_DATA = {
         616.71
       ],
       "area": 876.43,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "35380",
+        "35040",
+        "35360",
+        "35060",
+        "35020",
+        "전라북도-전주시",
+        "35350",
+        "35310"
+      ],
       "acceptedAnswers": [
         "고창군",
         "전북특별자치도고창군",
@@ -4367,6 +6170,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "35020",
       "name": "군산시",
       "province": "전북특별자치도",
       "provinceSource": "전라북도",
@@ -4383,7 +6187,16 @@ export const MAP_DATA = {
         554.73
       ],
       "area": 600.58,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "35380",
+        "35060",
+        "35030",
+        "35370",
+        "35040",
+        "전라북도-전주시",
+        "35310",
+        "35360"
+      ],
       "acceptedAnswers": [
         "군산시",
         "전북특별자치도군산시",
@@ -4391,6 +6204,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "35060",
       "name": "김제시",
       "province": "전북특별자치도",
       "provinceSource": "전라북도",
@@ -4407,7 +6221,16 @@ export const MAP_DATA = {
         569.95
       ],
       "area": 779.43,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "35040",
+        "전라북도-전주시",
+        "35030",
+        "35310",
+        "35380",
+        "35350",
+        "35020",
+        "35360"
+      ],
       "acceptedAnswers": [
         "김제시",
         "전북특별자치도김제시",
@@ -4415,6 +6238,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "35050",
       "name": "남원시",
       "province": "전북특별자치도",
       "provinceSource": "전라북도",
@@ -4431,7 +6255,16 @@ export const MAP_DATA = {
         617.95
       ],
       "area": 1073.68,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "35350",
+        "35340",
+        "35360",
+        "35320",
+        "35040",
+        "전라북도-전주시",
+        "35310",
+        "35330"
+      ],
       "acceptedAnswers": [
         "남원시",
         "전북특별자치도남원시",
@@ -4439,6 +6272,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "35330",
       "name": "무주군",
       "province": "전북특별자치도",
       "provinceSource": "전라북도",
@@ -4455,7 +6289,16 @@ export const MAP_DATA = {
         552.02
       ],
       "area": 901.15,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "35320",
+        "35340",
+        "35310",
+        "35350",
+        "전라북도-전주시",
+        "35050",
+        "35030",
+        "35060"
+      ],
       "acceptedAnswers": [
         "무주군",
         "전북특별자치도무주군",
@@ -4463,6 +6306,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "35380",
       "name": "부안군",
       "province": "전북특별자치도",
       "provinceSource": "전라북도",
@@ -4479,7 +6323,16 @@ export const MAP_DATA = {
         582.83
       ],
       "area": 759.61,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "35020",
+        "35370",
+        "35060",
+        "35040",
+        "35030",
+        "전라북도-전주시",
+        "35360",
+        "35310"
+      ],
       "acceptedAnswers": [
         "부안군",
         "전북특별자치도부안군",
@@ -4487,6 +6340,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "35360",
       "name": "순창군",
       "province": "전북특별자치도",
       "provinceSource": "전라북도",
@@ -4503,7 +6357,16 @@ export const MAP_DATA = {
         618.36
       ],
       "area": 715.85,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "35040",
+        "35350",
+        "35050",
+        "전라북도-전주시",
+        "35370",
+        "35060",
+        "35340",
+        "35310"
+      ],
       "acceptedAnswers": [
         "순창군",
         "전북특별자치도순창군",
@@ -4511,6 +6374,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "35310",
       "name": "완주군",
       "province": "전북특별자치도",
       "provinceSource": "전라북도",
@@ -4527,7 +6391,16 @@ export const MAP_DATA = {
         559.12
       ],
       "area": 1176.68,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "전라북도-전주시",
+        "35030",
+        "35320",
+        "35060",
+        "35350",
+        "35040",
+        "35340",
+        "35330"
+      ],
       "acceptedAnswers": [
         "완주군",
         "전북특별자치도완주군",
@@ -4535,6 +6408,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "35030",
       "name": "익산시",
       "province": "전북특별자치도",
       "provinceSource": "전라북도",
@@ -4551,7 +6425,16 @@ export const MAP_DATA = {
         539.7
       ],
       "area": 725.92,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "35310",
+        "전라북도-전주시",
+        "35060",
+        "35320",
+        "35040",
+        "35350",
+        "35020",
+        "35380"
+      ],
       "acceptedAnswers": [
         "익산시",
         "전북특별자치도익산시",
@@ -4559,6 +6442,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "35350",
       "name": "임실군",
       "province": "전북특별자치도",
       "provinceSource": "전라북도",
@@ -4575,7 +6459,16 @@ export const MAP_DATA = {
         593.08
       ],
       "area": 853.98,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "35340",
+        "전라북도-전주시",
+        "35050",
+        "35360",
+        "35320",
+        "35310",
+        "35040",
+        "35060"
+      ],
       "acceptedAnswers": [
         "임실군",
         "전북특별자치도임실군",
@@ -4583,6 +6476,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "35340",
       "name": "장수군",
       "province": "전북특별자치도",
       "provinceSource": "전라북도",
@@ -4599,7 +6493,16 @@ export const MAP_DATA = {
         588.52
       ],
       "area": 761.26,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "35320",
+        "35350",
+        "35050",
+        "35330",
+        "35310",
+        "전라북도-전주시",
+        "35360",
+        "35040"
+      ],
       "acceptedAnswers": [
         "장수군",
         "전북특별자치도장수군",
@@ -4607,6 +6510,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "전라북도-전주시",
       "name": "전주시",
       "province": "전북특별자치도",
       "provinceSource": "전라북도",
@@ -4623,7 +6527,16 @@ export const MAP_DATA = {
         566.87
       ],
       "area": 293.9,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "35310",
+        "35060",
+        "35030",
+        "35350",
+        "35040",
+        "35320",
+        "35340",
+        "35360"
+      ],
       "acceptedAnswers": [
         "전주시",
         "전북특별자치도전주시",
@@ -4631,6 +6544,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "35040",
       "name": "정읍시",
       "province": "전북특별자치도",
       "provinceSource": "전라북도",
@@ -4647,7 +6561,16 @@ export const MAP_DATA = {
         594.08
       ],
       "area": 998.74,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "35060",
+        "35360",
+        "전라북도-전주시",
+        "35350",
+        "35370",
+        "35310",
+        "35380",
+        "35030"
+      ],
       "acceptedAnswers": [
         "정읍시",
         "전북특별자치도정읍시",
@@ -4655,6 +6578,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "35320",
       "name": "진안군",
       "province": "전북특별자치도",
       "provinceSource": "전라북도",
@@ -4671,7 +6595,16 @@ export const MAP_DATA = {
         565.86
       ],
       "area": 1129.57,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "35340",
+        "35310",
+        "35330",
+        "35350",
+        "전라북도-전주시",
+        "35050",
+        "35030",
+        "35060"
+      ],
       "acceptedAnswers": [
         "진안군",
         "전북특별자치도진안군",
@@ -4679,6 +6612,7 @@ export const MAP_DATA = {
       ]
     },
     {
+      "id": "39020",
       "name": "서귀포시",
       "province": "제주특별자치도",
       "provinceSource": "제주특별자치도",
@@ -4695,13 +6629,16 @@ export const MAP_DATA = {
         900.64
       ],
       "area": 1259.88,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "39010"
+      ],
       "acceptedAnswers": [
         "서귀포시",
         "제주특별자치도서귀포시"
       ]
     },
     {
+      "id": "39010",
       "name": "제주시",
       "province": "제주특별자치도",
       "provinceSource": "제주특별자치도",
@@ -4718,13 +6655,16 @@ export const MAP_DATA = {
         854.55
       ],
       "area": 1406.71,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "39020"
+      ],
       "acceptedAnswers": [
         "제주시",
         "제주특별자치도제주시"
       ]
     },
     {
+      "id": "34070",
       "name": "계룡시",
       "province": "충청남도",
       "provinceSource": "충청남도",
@@ -4741,13 +6681,23 @@ export const MAP_DATA = {
         503.83
       ],
       "area": 87.31,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "34060",
+        "34020",
+        "34310",
+        "34330",
+        "34350",
+        "34340",
+        "충청남도-천안시",
+        "34370"
+      ],
       "acceptedAnswers": [
         "계룡시",
         "충청남도계룡시"
       ]
     },
     {
+      "id": "34020",
       "name": "공주시",
       "province": "충청남도",
       "provinceSource": "충청남도",
@@ -4764,13 +6714,23 @@ export const MAP_DATA = {
         478.9
       ],
       "area": 1237.09,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "34350",
+        "34070",
+        "34060",
+        "34330",
+        "34370",
+        "34040",
+        "충청남도-천안시",
+        "34360"
+      ],
       "acceptedAnswers": [
         "공주시",
         "충청남도공주시"
       ]
     },
     {
+      "id": "34310",
       "name": "금산군",
       "province": "충청남도",
       "provinceSource": "충청남도",
@@ -4787,13 +6747,23 @@ export const MAP_DATA = {
         525.89
       ],
       "area": 825.05,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "34070",
+        "34060",
+        "34020",
+        "34330",
+        "34350",
+        "34340",
+        "충청남도-천안시",
+        "34370"
+      ],
       "acceptedAnswers": [
         "금산군",
         "충청남도금산군"
       ]
     },
     {
+      "id": "34060",
       "name": "논산시",
       "province": "충청남도",
       "provinceSource": "충청남도",
@@ -4810,13 +6780,23 @@ export const MAP_DATA = {
         515.63
       ],
       "area": 792.74,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "34070",
+        "34330",
+        "34310",
+        "34020",
+        "34350",
+        "34340",
+        "34370",
+        "34360"
+      ],
       "acceptedAnswers": [
         "논산시",
         "충청남도논산시"
       ]
     },
     {
+      "id": "34080",
       "name": "당진시",
       "province": "충청남도",
       "provinceSource": "충청남도",
@@ -4833,13 +6813,23 @@ export const MAP_DATA = {
         421.67
       ],
       "area": 1015.52,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "34050",
+        "34370",
+        "34040",
+        "34360",
+        "충청남도-천안시",
+        "34350",
+        "34020",
+        "34380"
+      ],
       "acceptedAnswers": [
         "당진시",
         "충청남도당진시"
       ]
     },
     {
+      "id": "34030",
       "name": "보령시",
       "province": "충청남도",
       "provinceSource": "충청남도",
@@ -4856,13 +6846,23 @@ export const MAP_DATA = {
         495.81
       ],
       "area": 834.91,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "34360",
+        "34340",
+        "34350",
+        "34330",
+        "34380",
+        "34370",
+        "34050",
+        "34080"
+      ],
       "acceptedAnswers": [
         "보령시",
         "충청남도보령시"
       ]
     },
     {
+      "id": "34330",
       "name": "부여군",
       "province": "충청남도",
       "provinceSource": "충청남도",
@@ -4879,13 +6879,23 @@ export const MAP_DATA = {
         511.85
       ],
       "area": 893.92,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "34340",
+        "34350",
+        "34060",
+        "34020",
+        "34070",
+        "34360",
+        "34370",
+        "34030"
+      ],
       "acceptedAnswers": [
         "부여군",
         "충청남도부여군"
       ]
     },
     {
+      "id": "34050",
       "name": "서산시",
       "province": "충청남도",
       "provinceSource": "충청남도",
@@ -4902,13 +6912,23 @@ export const MAP_DATA = {
         433.87
       ],
       "area": 1063.58,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "34080",
+        "34360",
+        "34370",
+        "34040",
+        "34380",
+        "34350",
+        "34030",
+        "충청남도-천안시"
+      ],
       "acceptedAnswers": [
         "서산시",
         "충청남도서산시"
       ]
     },
     {
+      "id": "34340",
       "name": "서천군",
       "province": "충청남도",
       "provinceSource": "충청남도",
@@ -4925,13 +6945,23 @@ export const MAP_DATA = {
         530.15
       ],
       "area": 525.8,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "34330",
+        "34030",
+        "34350",
+        "34060",
+        "34360",
+        "34070",
+        "34020",
+        "34370"
+      ],
       "acceptedAnswers": [
         "서천군",
         "충청남도서천군"
       ]
     },
     {
+      "id": "34040",
       "name": "아산시",
       "province": "충청남도",
       "provinceSource": "충청남도",
@@ -4948,13 +6978,23 @@ export const MAP_DATA = {
         436.82
       ],
       "area": 777.12,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "충청남도-천안시",
+        "34370",
+        "34080",
+        "34020",
+        "34350",
+        "34360",
+        "34050",
+        "34070"
+      ],
       "acceptedAnswers": [
         "아산시",
         "충청남도아산시"
       ]
     },
     {
+      "id": "34370",
       "name": "예산군",
       "province": "충청남도",
       "provinceSource": "충청남도",
@@ -4971,13 +7011,23 @@ export const MAP_DATA = {
         453.91
       ],
       "area": 778.02,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "34360",
+        "34040",
+        "34350",
+        "34080",
+        "34050",
+        "34020",
+        "충청남도-천안시",
+        "34330"
+      ],
       "acceptedAnswers": [
         "예산군",
         "충청남도예산군"
       ]
     },
     {
+      "id": "충청남도-천안시",
       "name": "천안시",
       "province": "충청남도",
       "provinceSource": "충청남도",
@@ -4994,13 +7044,23 @@ export const MAP_DATA = {
         436.72
       ],
       "area": 910.87,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "34040",
+        "34020",
+        "34370",
+        "34350",
+        "34080",
+        "34070",
+        "34360",
+        "34050"
+      ],
       "acceptedAnswers": [
         "천안시",
         "충청남도천안시"
       ]
     },
     {
+      "id": "34350",
       "name": "청양군",
       "province": "충청남도",
       "provinceSource": "충청남도",
@@ -5017,13 +7077,23 @@ export const MAP_DATA = {
         483.48
       ],
       "area": 685.34,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "34020",
+        "34330",
+        "34370",
+        "34360",
+        "34060",
+        "34070",
+        "34040",
+        "34340"
+      ],
       "acceptedAnswers": [
         "청양군",
         "충청남도청양군"
       ]
     },
     {
+      "id": "34380",
       "name": "태안군",
       "province": "충청남도",
       "provinceSource": "충청남도",
@@ -5040,13 +7110,23 @@ export const MAP_DATA = {
         450.35
       ],
       "area": 765.75,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "34050",
+        "34030",
+        "34360",
+        "34080",
+        "34370",
+        "34350",
+        "34040",
+        "34340"
+      ],
       "acceptedAnswers": [
         "태안군",
         "충청남도태안군"
       ]
     },
     {
+      "id": "34360",
       "name": "홍성군",
       "province": "충청남도",
       "provinceSource": "충청남도",
@@ -5063,13 +7143,23 @@ export const MAP_DATA = {
         466.99
       ],
       "area": 634.79,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "34370",
+        "34350",
+        "34050",
+        "34030",
+        "34080",
+        "34040",
+        "34020",
+        "34330"
+      ],
       "acceptedAnswers": [
         "홍성군",
         "충청남도홍성군"
       ]
     },
     {
+      "id": "33360",
       "name": "괴산군",
       "province": "충청북도",
       "provinceSource": "충청북도",
@@ -5086,13 +7176,23 @@ export const MAP_DATA = {
         439.65
       ],
       "area": 1205.62,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "33390",
+        "33020",
+        "33370",
+        "33320",
+        "충청북도-청주시",
+        "33030",
+        "33350",
+        "33330"
+      ],
       "acceptedAnswers": [
         "괴산군",
         "충청북도괴산군"
       ]
     },
     {
+      "id": "33380",
       "name": "단양군",
       "province": "충청북도",
       "provinceSource": "충청북도",
@@ -5109,13 +7209,23 @@ export const MAP_DATA = {
         411.98
       ],
       "area": 1116.5,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "33030",
+        "33020",
+        "33360",
+        "33370",
+        "33390",
+        "33320",
+        "33350",
+        "충청북도-청주시"
+      ],
       "acceptedAnswers": [
         "단양군",
         "충청북도단양군"
       ]
     },
     {
+      "id": "33320",
       "name": "보은군",
       "province": "충청북도",
       "provinceSource": "충청북도",
@@ -5132,13 +7242,23 @@ export const MAP_DATA = {
         477.22
       ],
       "area": 835.22,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "충청북도-청주시",
+        "33330",
+        "33390",
+        "33360",
+        "33340",
+        "33350",
+        "33370",
+        "33020"
+      ],
       "acceptedAnswers": [
         "보은군",
         "충청북도보은군"
       ]
     },
     {
+      "id": "33340",
       "name": "영동군",
       "province": "충청북도",
       "provinceSource": "충청북도",
@@ -5155,13 +7275,23 @@ export const MAP_DATA = {
         520.64
       ],
       "area": 1220.36,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "33330",
+        "33320",
+        "충청북도-청주시",
+        "33360",
+        "33390",
+        "33350",
+        "33020",
+        "33370"
+      ],
       "acceptedAnswers": [
         "영동군",
         "충청북도영동군"
       ]
     },
     {
+      "id": "33330",
       "name": "옥천군",
       "province": "충청북도",
       "provinceSource": "충청북도",
@@ -5178,13 +7308,23 @@ export const MAP_DATA = {
         501.63
       ],
       "area": 775.66,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "33340",
+        "33320",
+        "충청북도-청주시",
+        "33390",
+        "33360",
+        "33350",
+        "33370",
+        "33020"
+      ],
       "acceptedAnswers": [
         "옥천군",
         "충청북도옥천군"
       ]
     },
     {
+      "id": "33370",
       "name": "음성군",
       "province": "충청북도",
       "provinceSource": "충청북도",
@@ -5201,13 +7341,23 @@ export const MAP_DATA = {
         410.48
       ],
       "area": 743.11,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "33350",
+        "33390",
+        "33020",
+        "33360",
+        "33030",
+        "충청북도-청주시",
+        "33320",
+        "33380"
+      ],
       "acceptedAnswers": [
         "음성군",
         "충청북도음성군"
       ]
     },
     {
+      "id": "33030",
       "name": "제천시",
       "province": "충청북도",
       "provinceSource": "충청북도",
@@ -5224,13 +7374,23 @@ export const MAP_DATA = {
         404.89
       ],
       "area": 1263.47,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "33020",
+        "33380",
+        "33360",
+        "33370",
+        "33390",
+        "33350",
+        "33320",
+        "충청북도-청주시"
+      ],
       "acceptedAnswers": [
         "제천시",
         "충청북도제천시"
       ]
     },
     {
+      "id": "33390",
       "name": "증평군",
       "province": "충청북도",
       "provinceSource": "충청북도",
@@ -5247,13 +7407,23 @@ export const MAP_DATA = {
         438.87
       ],
       "area": 117.3,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "33350",
+        "충청북도-청주시",
+        "33360",
+        "33370",
+        "33320",
+        "33020",
+        "33330",
+        "33030"
+      ],
       "acceptedAnswers": [
         "증평군",
         "충청북도증평군"
       ]
     },
     {
+      "id": "33350",
       "name": "진천군",
       "province": "충청북도",
       "provinceSource": "충청북도",
@@ -5270,13 +7440,23 @@ export const MAP_DATA = {
         425.63
       ],
       "area": 584.49,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "33390",
+        "33370",
+        "충청북도-청주시",
+        "33360",
+        "33020",
+        "33320",
+        "33030",
+        "33330"
+      ],
       "acceptedAnswers": [
         "진천군",
         "충청북도진천군"
       ]
     },
     {
+      "id": "충청북도-청주시",
       "name": "청주시",
       "province": "충청북도",
       "provinceSource": "충청북도",
@@ -5293,13 +7473,23 @@ export const MAP_DATA = {
         463.63
       ],
       "area": 1343.82,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "33320",
+        "33390",
+        "33350",
+        "33330",
+        "33360",
+        "33370",
+        "33340",
+        "33020"
+      ],
       "acceptedAnswers": [
         "청주시",
         "충청북도청주시"
       ]
     },
     {
+      "id": "33020",
       "name": "충주시",
       "province": "충청북도",
       "provinceSource": "충청북도",
@@ -5316,7 +7506,16 @@ export const MAP_DATA = {
         408.89
       ],
       "area": 1404.46,
-      "sameProvinceNearby": [],
+      "sameProvinceNearby": [
+        "33030",
+        "33370",
+        "33360",
+        "33390",
+        "33350",
+        "33380",
+        "충청북도-청주시",
+        "33320"
+      ],
       "acceptedAnswers": [
         "충주시",
         "충청북도충주시"

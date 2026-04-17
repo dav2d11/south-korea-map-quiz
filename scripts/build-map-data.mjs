@@ -265,7 +265,7 @@ const regions = mergedFeatures.map((feature) => {
     .join(" ");
 
   return {
-    id: feature.code,
+    id: feature.id,
     name: feature.name,
     province: feature.provinceName,
     provinceSource: feature.provinceSourceName,
