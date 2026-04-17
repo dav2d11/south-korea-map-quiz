@@ -340,61 +340,61 @@ function formatRegionLabel(region) {
 }
 
 function buildChoices(answerRegion) {
-  // sameProvinceNearby 우선, 비어 있으면 같은 province에서 직접 찾아 보완
-  const nearbyIds = new Set(answerRegion.sameProvinceNearby || []);
-  const sameProvinceAll = shuffle(
-    regions.filter(
-      (region) => region.id !== answerRegion.id && region.province === answerRegion.province,
-    ),
-  );
-  const sameProvinceNearby = shuffle(
-    [...nearbyIds].map((regionId) => regionById.get(regionId)).filter(Boolean),
-  );
-  // 가까운 지역 + 같은 도 나머지 순서로 합치기 (중복 제거)
-  const sameProvinceCandidates = [
-    ...sameProvinceNearby,
-    ...sameProvinceAll.filter((r) => !nearbyIds.has(r.id)),
-  ];
-
-  const highWeightOthers = regions
-    .filter((region) => region.id !== answerRegion.id)
-    .sort((a, b) => stats[b.id].weight - stats[a.id].weight || a.fullName.localeCompare(b.fullName, "ko"));
-  const randomOthers = shuffle(regions.filter((region) => region.id !== answerRegion.id));
-  const picked = [];
-  const usedIds = new Set();
-  const usedLabels = new Set();
+  const allOthers = regions.filter((region) => region.id !== answerRegion.id);
+  const picked = [answerRegion];
+  const usedIds = new Set([answerRegion.id]);
 
   function tryAdd(region) {
     if (!region || usedIds.has(region.id)) {
-      return;
-    }
-    const label = formatRegionLabel(region);
-    if (usedLabels.has(label)) {
-      return;
+      return false;
     }
     usedIds.add(region.id);
-    usedLabels.add(label);
     picked.push(region);
+    return true;
   }
 
-  tryAdd(answerRegion);
-  for (const candidate of sameProvinceCandidates) {
-    tryAdd(candidate);
-    if (picked.length >= 4) {
+  // 같은 시도 후보를 1개 이상 섞어 실제로 헷갈리기 쉬운 선택지 구성
+  const sameProvince = shuffle(
+    allOthers.filter((region) => region.province === answerRegion.province),
+  );
+  for (const candidate of sameProvince) {
+    if (tryAdd(candidate)) {
       break;
     }
   }
-  for (const candidate of highWeightOthers) {
-    tryAdd(candidate);
+
+  const nearby = shuffle(
+    (answerRegion.sameProvinceNearby || [])
+      .map((regionId) => regionById.get(regionId))
+      .filter(Boolean),
+  );
+  for (const candidate of nearby) {
     if (picked.length >= 4) {
       break;
     }
+    tryAdd(candidate);
   }
-  for (const candidate of randomOthers) {
-    tryAdd(candidate);
+
+  const weighted = allOthers
+    .slice()
+    .sort(
+      (a, b) =>
+        (stats[b.id]?.weight ?? DEFAULT_WEIGHT) - (stats[a.id]?.weight ?? DEFAULT_WEIGHT) ||
+        a.fullName.localeCompare(b.fullName, "ko"),
+    );
+  for (const candidate of weighted) {
     if (picked.length >= 4) {
       break;
     }
+    tryAdd(candidate);
+  }
+
+  // 마지막 방어: 어떤 이유로든 부족하면 랜덤으로 끝까지 채워 4지선다 강제
+  for (const candidate of shuffle(allOthers)) {
+    if (picked.length >= 4) {
+      break;
+    }
+    tryAdd(candidate);
   }
 
   return shuffle(picked).slice(0, Math.min(4, picked.length));
@@ -635,6 +635,16 @@ function renderQuestion() {
 
   if (state.mode === "multiple") {
     const choices = buildChoices(region);
+    const guaranteedChoices =
+      choices.length >= 4
+        ? choices
+        : shuffle([
+            ...choices,
+            ...regions.filter(
+              (candidate) =>
+                candidate.id !== region.id && !choices.some((picked) => picked.id === candidate.id),
+            ),
+          ]).slice(0, Math.min(4, regions.length));
     screenRoot.innerHTML = `
       <div class="stack">
         ${badges}
@@ -643,7 +653,7 @@ function renderQuestion() {
           <p class="subtle">빨간색으로 표시된 시군구를 고르세요.</p>
         </section>
         <section class="choice-grid">
-          ${choices
+          ${guaranteedChoices
             .map(
               (choice) => `
                 <button class="choice-button" type="button" data-choice-id="${choice.id}">

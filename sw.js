@@ -1,4 +1,4 @@
-const CACHE_NAME = "south-korea-map-quiz-v3";
+const CACHE_NAME = "south-korea-map-quiz-v4";
 const ASSETS = [
   "./",
   "./index.html",
