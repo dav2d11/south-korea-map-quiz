@@ -8,6 +8,7 @@ const FORCE_GAP = 4;
 const MASTER_STREAK = 3;
 const WRONG_HISTORY_LIMIT = 200;
 const RECENT_REGION_COOLDOWN = 8;
+const INITIAL_EXCLUDED_REGIONS = new Set(["충청북도 충주시"]);
 
 const mapSvg = document.getElementById("quiz-map");
 const screenRoot = document.getElementById("screen-root");
@@ -303,11 +304,16 @@ function pickNextRegion() {
   const pool = getCandidatePool();
   const lastRegionId = state.currentRegionId;
   const available = pool.filter((region) => region.id !== lastRegionId);
-  const nonRecentAvailable =
-    available.length > RECENT_REGION_COOLDOWN
-      ? available.filter((region) => !state.recentRegionIds.includes(region.id))
+  const firstQuestionCandidates =
+    state.questionIndex === 0
+      ? available.filter((region) => !INITIAL_EXCLUDED_REGIONS.has(region.fullName))
       : available;
-  const workingPool = nonRecentAvailable.length > 0 ? nonRecentAvailable : available;
+  const baselinePool = firstQuestionCandidates.length > 0 ? firstQuestionCandidates : available;
+  const nonRecentAvailable =
+    baselinePool.length > RECENT_REGION_COOLDOWN
+      ? baselinePool.filter((region) => !state.recentRegionIds.includes(region.id))
+      : baselinePool;
+  const workingPool = nonRecentAvailable.length > 0 ? nonRecentAvailable : baselinePool;
   const stale = workingPool
     .filter((region) => {
       const lastSeen = stats[region.id].lastSeen;
