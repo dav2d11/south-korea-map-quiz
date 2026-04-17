@@ -32,12 +32,34 @@ const provinceDisplayNames = {
   충청북도: "충청북도",
 };
 
-function isOrdinaryDistrictName(name) {
-  return name.includes("시 ") && name.endsWith("구");
+const METROPOLITAN_PROVINCES = new Set([
+  "서울특별시",
+  "부산광역시",
+  "대구광역시",
+  "인천광역시",
+  "광주광역시",
+  "대전광역시",
+  "울산광역시",
+]);
+
+function shouldMergeDistrict(feature) {
+  if (feature.name.includes("시 ") && feature.name.endsWith("구")) {
+    return true;
+  }
+
+  return METROPOLITAN_PROVINCES.has(feature.provinceName) && feature.name.endsWith("구");
 }
 
-function getParentCityName(name) {
-  return name.split(" ")[0];
+function getMergedRegionName(feature) {
+  if (feature.name.includes("시 ") && feature.name.endsWith("구")) {
+    return feature.name.split(" ")[0];
+  }
+
+  if (METROPOLITAN_PROVINCES.has(feature.provinceName) && feature.name.endsWith("구")) {
+    return feature.provinceName;
+  }
+
+  return feature.name;
 }
 
 function squaredDistance(a, b) {
@@ -289,9 +311,9 @@ for (const fileName of fs.readdirSync(sourceDir)) {
 const mergedFeatureMap = new Map();
 
 for (const feature of rawFeatures) {
-  const ordinaryDistrict = isOrdinaryDistrictName(feature.name);
-  const mergedName = ordinaryDistrict ? getParentCityName(feature.name) : feature.name;
-  const mergedId = ordinaryDistrict
+  const shouldMerge = shouldMergeDistrict(feature);
+  const mergedName = getMergedRegionName(feature);
+  const mergedId = shouldMerge
     ? `${feature.provinceSourceName}-${mergedName}`
     : feature.code;
   const mergedKey = `${feature.provinceSourceName}|${mergedName}`;
@@ -362,7 +384,10 @@ const regions = mergedFeatures.map((feature) => {
     name: feature.name,
     province: feature.provinceName,
     provinceSource: feature.provinceSourceName,
-    fullName: `${feature.provinceName} ${feature.name}`,
+    fullName:
+      feature.name === feature.provinceName
+        ? feature.name
+        : `${feature.provinceName} ${feature.name}`,
     path: pathData,
     bbox: {
       minX: formatNumber(bbox.minX),

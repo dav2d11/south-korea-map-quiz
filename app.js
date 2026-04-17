@@ -381,6 +381,9 @@ function updateStats(regionId, isCorrect, submittedAnswer = "") {
 }
 
 function formatRegionLabel(region) {
+  if (region.name === region.province) {
+    return region.name;
+  }
   return `${region.province} ${region.name}`;
 }
 
