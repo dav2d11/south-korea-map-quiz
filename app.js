@@ -7,6 +7,7 @@ const MAX_WEIGHT = 50;
 const FORCE_GAP = 4;
 const MASTER_STREAK = 3;
 const WRONG_HISTORY_LIMIT = 200;
+const RECENT_REGION_COOLDOWN = 8;
 
 const mapSvg = document.getElementById("quiz-map");
 const screenRoot = document.getElementById("screen-root");
@@ -26,6 +27,8 @@ const state = {
   wrongRegionId: null,
   feedbackTimer: null,
   installPrompt: null,
+  recentRegionIds: [],
+  sessionMastery: {},
 };
 
 function normalizeText(value) {
@@ -119,6 +122,18 @@ function loadStore() {
 let store = loadStore();
 let stats = store.stats;
 
+function createSessionMastery() {
+  return Object.fromEntries(
+    regions.map((region) => [
+      region.id,
+      {
+        correctStreak: 0,
+        mastered: false,
+      },
+    ]),
+  );
+}
+
 function saveStore() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(store));
 }
@@ -198,11 +213,30 @@ function buildMap() {
   }
 }
 
+function shuffle(items) {
+  const cloned = items.slice();
+  for (let i = cloned.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [cloned[i], cloned[j]] = [cloned[j], cloned[i]];
+  }
+  return cloned;
+}
+
 function setActiveRegion(regionId) {
   for (const [id, path] of mapPaths) {
     path.classList.toggle("is-active", id === regionId);
     path.classList.toggle("is-muted", id !== regionId);
   }
+}
+
+function rememberRecentRegion(regionId) {
+  if (!regionId) {
+    return;
+  }
+  state.recentRegionIds = [regionId, ...state.recentRegionIds.filter((id) => id !== regionId)].slice(
+    0,
+    RECENT_REGION_COOLDOWN,
+  );
 }
 
 function getCandidatePool() {
@@ -229,9 +263,13 @@ function weightedChoice(candidates) {
 function pickNextRegion() {
   const pool = getCandidatePool();
   const lastRegionId = state.currentRegionId;
-
   const available = pool.filter((region) => region.id !== lastRegionId);
-  const stale = available
+  const nonRecentAvailable =
+    available.length > RECENT_REGION_COOLDOWN
+      ? available.filter((region) => !state.recentRegionIds.includes(region.id))
+      : available;
+  const workingPool = nonRecentAvailable.length > 0 ? nonRecentAvailable : available;
+  const stale = workingPool
     .filter((region) => {
       const lastSeen = stats[region.id].lastSeen;
       return lastSeen === null || state.questionIndex - lastSeen >= FORCE_GAP;
@@ -239,10 +277,10 @@ function pickNextRegion() {
     .sort((a, b) => stats[b.id].weight - stats[a.id].weight);
 
   if (stale.length > 0) {
-    return stale[0];
+    return weightedChoice(stale.slice(0, Math.min(10, stale.length)));
   }
 
-  return weightedChoice(available.length > 0 ? available : pool);
+  return weightedChoice(workingPool.length > 0 ? workingPool : pool);
 }
 
 function recordWrongAttempt(region, submittedAnswer = "") {
@@ -302,34 +340,77 @@ function formatRegionLabel(region) {
 }
 
 function buildChoices(answerRegion) {
-  const sameProvince = answerRegion.sameProvinceNearby
-    .map((regionId) => regionById.get(regionId))
-    .filter(Boolean)
-    .slice(0, 2);
+  const sameProvince = shuffle(
+    answerRegion.sameProvinceNearby.map((regionId) => regionById.get(regionId)).filter(Boolean),
+  );
+  const highWeightOthers = regions
+    .filter((region) => region.id !== answerRegion.id)
+    .sort((a, b) => stats[b.id].weight - stats[a.id].weight || a.fullName.localeCompare(b.fullName, "ko"));
+  const randomOthers = shuffle(regions.filter((region) => region.id !== answerRegion.id));
+  const picked = [];
+  const usedIds = new Set();
+  const usedLabels = new Set();
 
-  const chosen = new Map([[answerRegion.id, answerRegion]]);
-  for (const candidate of sameProvince) {
-    chosen.set(candidate.id, candidate);
+  function tryAdd(region) {
+    if (!region || usedIds.has(region.id)) {
+      return;
+    }
+    const label = formatRegionLabel(region);
+    if (usedLabels.has(label)) {
+      return;
+    }
+    usedIds.add(region.id);
+    usedLabels.add(label);
+    picked.push(region);
   }
 
-  const others = regions
-    .filter((region) => region.id !== answerRegion.id && !chosen.has(region.id))
-    .sort((a, b) => stats[b.id].weight - stats[a.id].weight || a.fullName.localeCompare(b.fullName, "ko"));
-
-  for (const candidate of others) {
-    chosen.set(candidate.id, candidate);
-    if (chosen.size >= 4) {
+  tryAdd(answerRegion);
+  for (const candidate of sameProvince) {
+    tryAdd(candidate);
+    if (picked.length >= 4) {
+      break;
+    }
+  }
+  for (const candidate of highWeightOthers) {
+    tryAdd(candidate);
+    if (picked.length >= 4) {
+      break;
+    }
+  }
+  for (const candidate of randomOthers) {
+    tryAdd(candidate);
+    if (picked.length >= 4) {
       break;
     }
   }
 
-  return Array.from(chosen.values())
-    .slice(0, 4)
-    .sort(() => Math.random() - 0.5);
+  return shuffle(picked).slice(0, Math.min(4, picked.length));
+}
+
+function updateSessionMastery(regionId, isCorrect) {
+  const sessionStat = state.sessionMastery[regionId];
+  if (!sessionStat) {
+    return;
+  }
+
+  if (isCorrect) {
+    sessionStat.correctStreak += 1;
+    if (sessionStat.correctStreak >= MASTER_STREAK) {
+      sessionStat.mastered = true;
+    }
+    return;
+  }
+
+  sessionStat.correctStreak = 0;
+  sessionStat.mastered = false;
+}
+
+function countSessionMastered() {
+  return Object.values(state.sessionMastery).filter((region) => region.mastered).length;
 }
 
 function allMastered() {
-  return regions.every((region) => stats[region.id].correctStreak >= MASTER_STREAK);
+  return regions.every((region) => state.sessionMastery[region.id]?.mastered);
 }
 
 function nextQuestion() {
@@ -354,6 +435,7 @@ function nextQuestion() {
   state.wrongRegionId = null;
   state.status = "question";
   state.questionIndex += 1;
+  rememberRecentRegion(region.id);
   setActiveRegion(region.id);
   render();
 }
@@ -366,6 +448,8 @@ function startGame(mode) {
   state.questionIndex = 0;
   state.currentRegionId = null;
   state.wrongRegionId = null;
+  state.recentRegionIds = [];
+  state.sessionMastery = createSessionMastery();
   nextQuestion();
 }
 
@@ -391,6 +475,7 @@ function showWrongNote() {
 
 function handleCorrect(region) {
   updateStats(region.id, true);
+  updateSessionMastery(region.id, true);
   state.score += 1;
   state.answered += 1;
   state.status = "correct";
@@ -402,6 +487,7 @@ function handleCorrect(region) {
 
 function handleWrong(region, submittedAnswer = "") {
   updateStats(region.id, false, submittedAnswer);
+  updateSessionMastery(region.id, false);
   state.answered += 1;
   state.status = "wrong";
   state.wrongRegionId = region.id;
@@ -524,11 +610,13 @@ function renderQuestion() {
   }
 
   const scoreText = `${state.score} / ${state.answered}`;
+  const sessionMastered = countSessionMastered();
   const badges = `
     <div class="badge-row">
       <span class="badge">점수 ${scoreText}</span>
       <span class="badge">현재 모드 ${state.mode === "multiple" ? "객관식" : "주관식"}</span>
       <span class="badge">가중치 ${stats[region.id].weight}</span>
+      <span class="badge">이번 라운드 완료 ${sessionMastered}/${regions.length}</span>
     </div>
   `;
 
